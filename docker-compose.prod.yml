@@ -1,0 +1,104 @@
+# Docker Compose - Production Configuration
+version: '3.8'
+
+services:
+  # Production PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_prod_data:/var/lib/postgresql/data
+      - ./backups:/backups
+    networks:
+      - roguelike_network
+    # No port exposure for production security
+
+  # Production Redis
+  redis:
+    image: redis:7-alpine
+    restart: always
+    volumes:
+      - redis_prod_data:/data
+    networks:
+      - roguelike_network
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    # No port exposure for production security
+
+  # Production Backend
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      target: production
+    restart: always
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+      DATABASE_URL: ${DATABASE_URL}
+      REDIS_URL: ${REDIS_URL}
+      JWT_SECRET: ${JWT_SECRET}
+      JWT_ACCESS_EXPIRY: ${JWT_ACCESS_EXPIRY}
+      JWT_REFRESH_EXPIRY: ${JWT_REFRESH_EXPIRY}
+      BCRYPT_ROUNDS: ${BCRYPT_ROUNDS}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - roguelike_network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/health', (res) => process.exit(res.statusCode === 200 ? 0 : 1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Production Frontend with Nginx
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      target: production
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - server
+    networks:
+      - roguelike_network
+    volumes:
+      - ./ssl:/etc/nginx/ssl:ro  # For SSL certificates
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx Load Balancer (if scaling backend)
+  nginx:
+    image: nginx:alpine
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - client
+      - server
+    networks:
+      - roguelike_network
+
+volumes:
+  postgres_prod_data:
+  redis_prod_data:
+
+networks:
+  roguelike_network:
+    driver: bridge

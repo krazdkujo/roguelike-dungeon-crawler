@@ -1,0 +1,208 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Users & Authentication
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  username     String    @unique
+  passwordHash String    @map("password_hash")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+  
+  // Relations
+  sessions     Session[]
+  characters   Character[]
+  guildMemberships GuildMember[]
+  
+  @@map("users")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  userId       String   @map("user_id")
+  refreshToken String   @unique @map("refresh_token")
+  expiresAt    DateTime @map("expires_at")
+  createdAt    DateTime @default(now()) @map("created_at")
+  
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("sessions")
+}
+
+// Game Data
+model Character {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  name      String
+  class     String   // "warrior", "mage", "rogue"
+  level     Int      @default(1)
+  experience Int     @default(0)
+  statsJson Json     @map("stats_json") // { hp, mp, attack, defense, speed, etc. }
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  
+  // Relations
+  user         User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  inventories  CharacterInventory[]
+  skills       CharacterSkill[]
+  
+  @@map("characters")
+}
+
+model Dungeon {
+  id          String @id @default(cuid())
+  name        String
+  difficulty  Int    // 1-5 difficulty rating
+  maxPlayers  Int    @default(4) @map("max_players")
+  layoutJson  Json   @map("layout_json") // Room layout, connections, etc.
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  // Relations
+  rooms     Room[]
+  instances DungeonInstance[]
+  
+  @@map("dungeons")
+}
+
+model DungeonInstance {
+  id          String   @id @default(cuid())
+  dungeonId   String   @map("dungeon_id")
+  playersJson Json     @map("players_json") // Array of player data
+  state       String   @default("waiting") // "waiting", "active", "completed", "abandoned"
+  currentRoom String?  @map("current_room") // Current room ID
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  
+  // Relations
+  dungeon         Dungeon @relation(fields: [dungeonId], references: [id], onDelete: Cascade)
+  combatInstances CombatInstance[]
+  
+  @@map("dungeon_instances")
+}
+
+model Room {
+  id           String @id @default(cuid())
+  dungeonId    String @map("dungeon_id")
+  positionX    Int    @map("position_x")
+  positionY    Int    @map("position_y")
+  type         String // "entrance", "combat", "treasure", "boss", "exit"
+  monstersJson Json?  @map("monsters_json") // Monster spawn data
+  
+  // Relations
+  dungeon Dungeon @relation(fields: [dungeonId], references: [id], onDelete: Cascade)
+  
+  @@unique([dungeonId, positionX, positionY])
+  @@map("rooms")
+}
+
+// Combat & Items
+model CombatInstance {
+  id               String  @id @default(cuid())
+  instanceId       String  @map("instance_id")
+  participantsJson Json    @map("participants_json") // Players and monsters
+  turnOrder        Json    @map("turn_order") // Array of participant IDs
+  currentTurn      String  @map("current_turn") // Current participant ID
+  state            String  @default("active") // "active", "completed"
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+  
+  // Relations
+  instance DungeonInstance @relation(fields: [instanceId], references: [id], onDelete: Cascade)
+  
+  @@map("combat_instances")
+}
+
+model Item {
+  id          String @id @default(cuid())
+  name        String
+  type        String // "weapon", "armor", "consumable", "misc"
+  rarity      String // "common", "uncommon", "rare", "epic", "legendary"
+  statsJson   Json   @map("stats_json") // Item effects and bonuses
+  description String
+  
+  // Relations
+  inventories CharacterInventory[]
+  
+  @@map("items")
+}
+
+model CharacterInventory {
+  id          String  @id @default(cuid())
+  characterId String  @map("character_id")
+  itemId      String  @map("item_id")
+  quantity    Int     @default(1)
+  equipped    Boolean @default(false)
+  
+  // Relations
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  item      Item      @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  
+  @@unique([characterId, itemId])
+  @@map("character_inventories")
+}
+
+model Skill {
+  id            String @id @default(cuid())
+  name          String
+  class         String // "warrior", "mage", "rogue", "universal"
+  levelRequired Int    @default(1) @map("level_required")
+  effectJson    Json   @map("effect_json") // Skill effects, damage, etc.
+  description   String
+  
+  // Relations
+  characterSkills CharacterSkill[]
+  
+  @@map("skills")
+}
+
+model CharacterSkill {
+  characterId String   @map("character_id")
+  skillId     String   @map("skill_id")
+  learnedAt   DateTime @default(now()) @map("learned_at")
+  
+  // Relations
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  skill     Skill     @relation(fields: [skillId], references: [id], onDelete: Cascade)
+  
+  @@id([characterId, skillId])
+  @@map("character_skills")
+}
+
+// Guilds & Social (Phase 2)
+model Guild {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  leaderId    String   @map("leader_id")
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  
+  // Relations
+  members GuildMember[]
+  
+  @@map("guilds")
+}
+
+model GuildMember {
+  guildId  String   @map("guild_id")
+  userId   String   @map("user_id")
+  role     String   @default("member") // "leader", "officer", "member"
+  joinedAt DateTime @default(now()) @map("joined_at")
+  
+  // Relations
+  guild Guild @relation(fields: [guildId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@id([guildId, userId])
+  @@map("guild_members")
+}

@@ -1,0 +1,53 @@
+# Docker Compose Override - Development Specific Settings
+# This file provides development-specific overrides
+version: '3.8'
+
+services:
+  # Development-specific PostgreSQL configuration
+  postgres:
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: roguelike_dev
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev123
+    volumes:
+      - postgres_dev_data:/var/lib/postgresql/data
+      - ./server/prisma/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
+
+  # Development-specific Redis configuration
+  redis:
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_dev_data:/data
+
+  # Backend development overrides
+  server:
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+      - ./server/.env:/app/.env
+    command: ["node", "src/simple-server.js"]
+    stdin_open: true
+    tty: true
+
+  # Frontend development overrides  
+  client:
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+      - ./client/.env:/app/.env
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+    stdin_open: true
+    tty: true
+
+volumes:
+  postgres_dev_data:
+  redis_dev_data:

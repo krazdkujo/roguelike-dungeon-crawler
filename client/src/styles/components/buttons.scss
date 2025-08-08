@@ -1,0 +1,280 @@
+// SNES JRPG Button Styles
+// Retro game button styling with pixel-perfect design
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-md);
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  
+  // Pixel-style borders
+  border: 3px solid transparent;
+  border-image: linear-gradient(45deg, #6a6aaa, #4a4a7a) 1;
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.6);
+  }
+
+  // Retro button press effect
+  &:active:not(:disabled) {
+    transform: translate(1px, 1px);
+  }
+}
+
+// Primary button (adventure/action)
+.btn-primary {
+  background: linear-gradient(145deg, #5a9df2 0%, #4a90e2 50%, #357abd 100%);
+  color: white;
+  border-color: #2a5a8a;
+  box-shadow: 
+    0 4px 0 #2a5a8a,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  
+  &:hover:not(:disabled) {
+    background: linear-gradient(145deg, #6aabf2 0%, #5a9df2 50%, #4585cd 100%);
+    transform: translateY(-1px);
+    box-shadow: 
+      0 5px 0 #2a5a8a,
+      0 8px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+  
+  &:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: 
+      0 2px 0 #2a5a8a,
+      0 3px 4px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Secondary button (cancel/back)
+.btn-secondary {
+  background: linear-gradient(145deg, #6a6aaa 0%, #5a5a8a 50%, #4a4a7a 100%);
+  color: #e0e0f0;
+  border-color: #3a3a5a;
+  box-shadow: 
+    0 4px 0 #3a3a5a,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  
+  &:hover:not(:disabled) {
+    background: linear-gradient(145deg, #7a7aba 0%, #6a6aaa 50%, #5a5a8a 100%);
+    transform: translateY(-1px);
+    box-shadow: 
+      0 5px 0 #3a3a5a,
+      0 8px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  &:active:not(:disabled) {
+    transform: translateY(2px);
+    box-shadow: 
+      0 2px 0 #3a3a5a,
+      0 3px 4px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+// Success button (healing/positive actions)
+.btn-success {
+  background: linear-gradient(145deg, #66bb6a 0%, #4caf50 50%, #388e3c 100%);
+  color: white;
+  border-color: #2e7d32;
+  box-shadow: 
+    0 4px 0 #2e7d32,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  
+  &:hover:not(:disabled) {
+    background: linear-gradient(145deg, #76cb7a 0%, #66bb6a 50%, #4caf50 100%);
+    transform: translateY(-1px);
+    box-shadow: 
+      0 5px 0 #2e7d32,
+      0 8px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Danger button (attack/destructive actions)
+.btn-danger {
+  background: linear-gradient(145deg, #ef5350 0%, #f44336 50%, #c62828 100%);
+  color: white;
+  border-color: #b71c1c;
+  box-shadow: 
+    0 4px 0 #b71c1c,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  
+  &:hover:not(:disabled) {
+    background: linear-gradient(145deg, #ff6659 0%, #ef5350 50%, #d32f2f 100%);
+    transform: translateY(-1px);
+    box-shadow: 
+      0 5px 0 #b71c1c,
+      0 8px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Warning button (special abilities)
+.btn-warning {
+  background: linear-gradient(145deg, #ffb74d 0%, #ff9800 50%, #f57c00 100%);
+  color: white;
+  border-color: #ef6c00;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 
+    0 4px 0 #ef6c00,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  
+  &:hover:not(:disabled) {
+    background: linear-gradient(145deg, #ffc665 0%, #ffb74d 50%, #ff9800 100%);
+    transform: translateY(-1px);
+    box-shadow: 
+      0 5px 0 #ef6c00,
+      0 8px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Character class themed buttons
+.btn-warrior {
+  background: linear-gradient(145deg, #ff8a80 0%, #ff6b6b 50%, #e53935 100%);
+  color: white;
+  border-color: #c62828;
+  box-shadow: 
+    0 4px 0 #c62828,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-mage {
+  background: linear-gradient(145deg, #80deea 0%, #4ecdc4 50%, #26a69a 100%);
+  color: white;
+  border-color: #00695c;
+  box-shadow: 
+    0 4px 0 #00695c,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-rogue {
+  background: linear-gradient(145deg, #64b5f6 0%, #45b7d1 50%, #1976d2 100%);
+  color: white;
+  border-color: #0d47a1;
+  box-shadow: 
+    0 4px 0 #0d47a1,
+    0 6px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+// Button sizes
+.btn-sm {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-size-xs);
+}
+
+.btn-lg {
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+.btn-xl {
+  padding: var(--space-lg) var(--space-xl);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+// Icon buttons
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  
+  &.btn-icon-sm {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  &.btn-icon-lg {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+  }
+}
+
+// Button groups
+.btn-group {
+  display: flex;
+  
+  .btn {
+    border-radius: 0;
+    margin-right: -3px;
+    
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      margin-right: 0;
+    }
+  }
+}
+
+// Loading state
+.btn-loading {
+  .btn-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: btn-spin 1s linear infinite;
+  }
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+  .btn {
+    padding: var(--space-sm) var(--space-sm);
+    font-size: var(--font-size-xs);
+  }
+  
+  .btn-lg {
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--font-size-base);
+  }
+}

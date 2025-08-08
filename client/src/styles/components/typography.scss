@@ -1,0 +1,417 @@
+// SNES JRPG Typography System
+// Pixel-perfect fonts and text styling for retro game feel
+
+// Import pixel fonts (fallback to web-safe monospace)
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+// Define font stacks
+:root {
+  --font-pixel: 'Press Start 2P', 'Courier New', 'Monaco', 'Menlo', monospace;
+  --font-mono: 'Courier New', 'Monaco', 'Menlo', 'Consolas', monospace;
+  --font-ui: 'Segoe UI', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+// Base typography classes
+.text-pixel {
+  font-family: var(--font-pixel);
+  line-height: 1.5;
+  text-rendering: pixelated;
+  image-rendering: pixelated;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+}
+
+.text-mono {
+  font-family: var(--font-mono);
+  line-height: 1.4;
+}
+
+.text-ui {
+  font-family: var(--font-ui);
+  line-height: 1.6;
+}
+
+// Game-style headings
+.heading-game-title {
+  font-family: var(--font-pixel);
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  color: #ffd700;
+  text-shadow: 
+    2px 2px 0 #cc9900,
+    3px 3px 0 #996600,
+    4px 4px 8px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--space-lg);
+  text-align: center;
+  animation: title-glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes title-glow {
+  0% { 
+    filter: drop-shadow(0 0 5px #ffd700); 
+  }
+  100% { 
+    filter: drop-shadow(0 0 15px #ffd700) drop-shadow(0 0 25px #cc9900); 
+  }
+}
+
+.heading-section {
+  font-family: var(--font-pixel);
+  font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+  color: var(--text-primary);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-md);
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #4a90e2, transparent);
+  }
+}
+
+.heading-card {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--text-primary);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: var(--space-sm);
+}
+
+.heading-dialog {
+  font-family: var(--font-pixel);
+  font-size: var(--font-size-sm);
+  color: #ffd700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin-bottom: var(--space-md);
+  text-transform: uppercase;
+}
+
+// Character and NPC text styles
+.text-dialog {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #4a4a7a;
+  border-radius: 8px;
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #4a4a7a;
+  }
+  
+  .speaker-name {
+    font-weight: bold;
+    color: #ffd700;
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+  }
+}
+
+.text-npc {
+  color: #4ecdc4;
+}
+
+.text-system {
+  font-family: var(--font-mono);
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+// Combat text styles
+.text-damage {
+  font-family: var(--font-pixel);
+  font-weight: bold;
+  color: #ff6b6b;
+  text-shadow: 
+    1px 1px 0 #cc0000,
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: damage-flash 0.5s ease-out;
+}
+
+@keyframes damage-flash {
+  0% { 
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% { 
+    transform: scale(1.2);
+    filter: brightness(1.5);
+  }
+  100% { 
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+.text-healing {
+  font-family: var(--font-pixel);
+  font-weight: bold;
+  color: #4caf50;
+  text-shadow: 
+    1px 1px 0 #2e7d32,
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: healing-pulse 0.8s ease-out;
+}
+
+@keyframes healing-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.text-experience {
+  font-family: var(--font-pixel);
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 
+    1px 1px 0 #cc9900,
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-level-up {
+  font-family: var(--font-pixel);
+  font-weight: bold;
+  color: #ff9800;
+  text-shadow: 
+    1px 1px 0 #e65100,
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: level-up 1s ease-out;
+}
+
+@keyframes level-up {
+  0% { 
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0;
+  }
+  50% { 
+    transform: scale(1.2) rotate(2deg);
+    opacity: 1;
+  }
+  100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+// Status and UI text
+.text-status {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  &.status-poisoned { color: #9c27b0; }
+  &.status-burned { color: #ff5722; }
+  &.status-frozen { color: #03a9f4; }
+  &.status-stunned { color: #ffeb3b; }
+  &.status-blessed { color: #4caf50; }
+  &.status-cursed { color: #795548; }
+}
+
+// Stat display text
+.text-stat {
+  font-family: var(--font-mono);
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+  
+  &.stat-hp { color: #ff6b6b; }
+  &.stat-mp { color: #2196f3; }
+  &.stat-attack { color: #ff9800; }
+  &.stat-defense { color: #9e9e9e; }
+  &.stat-speed { color: #4caf50; }
+  &.stat-luck { color: #e91e63; }
+}
+
+// Item rarity text
+.text-rarity {
+  font-family: var(--font-mono);
+  font-weight: bold;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  &.rarity-common { 
+    color: var(--color-common);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  &.rarity-uncommon { 
+    color: var(--color-uncommon);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  &.rarity-rare { 
+    color: var(--color-rare);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  &.rarity-epic { 
+    color: var(--color-epic);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    animation: rare-shimmer 2s ease-in-out infinite alternate;
+  }
+  &.rarity-legendary { 
+    color: var(--color-legendary);
+    text-shadow: 
+      1px 1px 2px rgba(0, 0, 0, 0.8),
+      0 0 10px currentColor;
+    animation: legendary-glow 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes rare-shimmer {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.3); }
+}
+
+@keyframes legendary-glow {
+  0% { 
+    filter: brightness(1) drop-shadow(0 0 5px currentColor);
+  }
+  100% { 
+    filter: brightness(1.4) drop-shadow(0 0 15px currentColor);
+  }
+}
+
+// Character class text
+.text-class {
+  font-family: var(--font-pixel);
+  font-weight: bold;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+  &.class-warrior { 
+    color: var(--color-warrior);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  &.class-mage { 
+    color: var(--color-mage);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  &.class-rogue { 
+    color: var(--color-rogue);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+}
+
+// Loading and placeholder text
+.text-loading {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-align: center;
+  
+  &::after {
+    content: '...';
+    animation: loading-dots 1.5s infinite;
+  }
+}
+
+@keyframes loading-dots {
+  0%, 20% { content: '.'; }
+  40% { content: '..'; }
+  60%, 100% { content: '...'; }
+}
+
+.text-placeholder {
+  font-style: italic;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+// Typewriter effect for dramatic text
+.text-typewriter {
+  font-family: var(--font-mono);
+  overflow: hidden;
+  border-right: 2px solid #ffd700;
+  white-space: nowrap;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #ffd700; }
+}
+
+// Text size utilities for responsive design
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+
+// Text weight utilities
+.text-normal { font-weight: 400; }
+.text-medium { font-weight: 500; }
+.text-semibold { font-weight: 600; }
+.text-bold { font-weight: 700; }
+
+// Text transform utilities
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+
+// Responsive typography
+@media (max-width: 768px) {
+  .heading-game-title {
+    font-size: clamp(1rem, 6vw, 1.5rem);
+  }
+  
+  .heading-section {
+    font-size: clamp(0.75rem, 3vw, 1rem);
+  }
+  
+  .text-dialog {
+    font-size: var(--font-size-sm);
+    padding: var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-pixel {
+    font-size: 0.75rem;
+  }
+  
+  .heading-game-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  .text-typewriter {
+    font-size: var(--font-size-sm);
+  }
+}

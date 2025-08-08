@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(claude mcp:*)",
+      "Bash(npm install:*)",
+      "Bash(dir:*)",
+      "Bash(npx @modelcontextprotocol/server-sequential-thinking:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:modelcontextprotocol.io)",
+      "Bash(cat:*)",
+      "Bash(mkdir:*)",
+      "Bash(docker:*)",
+      "Bash(curl:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}

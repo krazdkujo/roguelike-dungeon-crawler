@@ -1,0 +1,348 @@
+// SNES JRPG Card/Panel Styles
+// Game-like UI panels with retro borders and effects
+
+.card {
+  background: rgba(30, 30, 60, 0.95);
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #6a6aaa, #4a4a7a, #6a6aaa) 1;
+  border-radius: 8px;
+  padding: var(--space-lg);
+  position: relative;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all var(--transition-normal);
+  
+  // Subtle inner glow effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #4a4a7a, #6a6aaa, #4a4a7a);
+    border-radius: 8px;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 
+      0 12px 24px rgba(0, 0, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+}
+
+// Character card variants
+.card-character {
+  border-image: linear-gradient(45deg, #ff6b6b, #ffd700, #4ecdc4) 1;
+  
+  &::before {
+    background: linear-gradient(45deg, #ff6b6b, #ffd700, #4ecdc4);
+  }
+  
+  .character-portrait {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    background: linear-gradient(135deg, #2a2a4a, #1a1a3a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+  }
+  
+  .character-class {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    background: rgba(255, 215, 0, 0.2);
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    color: #ffd700;
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .character-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    
+    .stat {
+      display: flex;
+      justify-content: space-between;
+      padding: var(--space-xs);
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: var(--font-size-sm);
+      
+      .stat-name {
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        font-size: var(--font-size-xs);
+      }
+      
+      .stat-value {
+        color: var(--text-primary);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Item card for inventory
+.card-item {
+  padding: var(--space-md);
+  min-height: 120px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  
+  &.rarity-common { border-image: linear-gradient(45deg, #9e9e9e, #757575) 1; }
+  &.rarity-uncommon { border-image: linear-gradient(45deg, #4caf50, #2e7d32) 1; }
+  &.rarity-rare { border-image: linear-gradient(45deg, #2196f3, #1565c0) 1; }
+  &.rarity-epic { border-image: linear-gradient(45deg, #9c27b0, #6a1b9a) 1; }
+  &.rarity-legendary { border-image: linear-gradient(45deg, #ff9800, #e65100) 1; }
+  
+  .item-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .item-name {
+    font-weight: bold;
+    margin-bottom: var(--space-xs);
+  }
+  
+  .item-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+  
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+// Skill card
+.card-skill {
+  border-image: linear-gradient(45deg, #4ecdc4, #26a69a) 1;
+  text-align: center;
+  
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4ecdc4, #26a69a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: var(--space-xs);
+    color: #4ecdc4;
+  }
+  
+  .skill-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .skill-cost {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    background: rgba(78, 205, 196, 0.2);
+    border: 1px solid #4ecdc4;
+    border-radius: 12px;
+    color: #4ecdc4;
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+  }
+}
+
+// Combat card for enemies/actions
+.card-combat {
+  border-image: linear-gradient(45deg, #ff6b6b, #e53935) 1;
+  
+  .combat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+    
+    .combat-name {
+      font-weight: bold;
+      color: #ff6b6b;
+    }
+    
+    .combat-type {
+      padding: var(--space-xs) var(--space-sm);
+      background: rgba(255, 107, 107, 0.2);
+      border: 1px solid #ff6b6b;
+      border-radius: 4px;
+      color: #ff6b6b;
+      font-size: var(--font-size-xs);
+      text-transform: uppercase;
+    }
+  }
+  
+  .health-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: var(--space-sm);
+    
+    .health-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #4caf50, #8bc34a);
+      border-radius: 4px;
+      transition: width var(--transition-normal);
+    }
+    
+    &.health-low .health-fill {
+      background: linear-gradient(90deg, #ff6b6b, #ff8a80);
+    }
+    
+    &.health-critical .health-fill {
+      background: linear-gradient(90deg, #d32f2f, #ff1744);
+      animation: health-pulse 1s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes health-pulse {
+  from { opacity: 1; }
+  to { opacity: 0.7; }
+}
+
+// Status card for notifications
+.card-status {
+  padding: var(--space-md);
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  
+  &.status-info {
+    background: rgba(33, 150, 243, 0.15);
+    border-image: linear-gradient(45deg, #2196f3, #1976d2) 1;
+    
+    .status-icon { color: #2196f3; }
+  }
+  
+  &.status-success {
+    background: rgba(76, 175, 80, 0.15);
+    border-image: linear-gradient(45deg, #4caf50, #388e3c) 1;
+    
+    .status-icon { color: #4caf50; }
+  }
+  
+  &.status-warning {
+    background: rgba(255, 152, 0, 0.15);
+    border-image: linear-gradient(45deg, #ff9800, #f57c00) 1;
+    
+    .status-icon { color: #ff9800; }
+  }
+  
+  &.status-error {
+    background: rgba(244, 67, 54, 0.15);
+    border-image: linear-gradient(45deg, #f44336, #d32f2f) 1;
+    
+    .status-icon { color: #f44336; }
+  }
+  
+  .status-icon {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    margin-top: 2px;
+  }
+  
+  .status-content {
+    flex: 1;
+    
+    .status-title {
+      font-weight: bold;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .status-message {
+      font-size: var(--font-size-sm);
+      color: var(--text-secondary);
+    }
+  }
+}
+
+// Card sizes
+.card-sm {
+  padding: var(--space-md);
+}
+
+.card-lg {
+  padding: var(--space-xl);
+}
+
+// Card layouts
+.card-grid {
+  display: grid;
+  gap: var(--space-lg);
+  
+  &.card-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  &.card-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  &.card-grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .card-grid-3,
+  .card-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: var(--space-md);
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .card-character .character-stats {
+    grid-template-columns: 1fr;
+  }
+}
