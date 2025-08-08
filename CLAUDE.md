@@ -19,7 +19,10 @@ Use project-manager to [task description]
     ├─ 🟡 Frontend Developer → UI and client-side
     ├─ 🟠 DevOps Specialist → Deployment and infrastructure
     ├─ 🔴 Security Specialist → Auth and security
-    └─ 🟪 QA Specialist → Testing and quality
+    ├─ 🟪 QA Specialist → Testing and quality
+    ├─ 🎨 Whimsy Director → UX optimization
+    ├─ 🎮 UI/UX Game Designer → SNES JRPG visuals
+    └─ 📖 Story-Writer/DM → Game content and balance
 
 🟣 Development Manager → Critical review (consulted by PM)
 ```
