@@ -1,280 +1,299 @@
-// SNES JRPG Button Styles
-// Retro game button styling with pixel-perfect design
+// AUTHENTIC SNES BUTTON SYSTEM
+// Classic 16-bit button styling with pixel-perfect design
+// NO MODERN EFFECTS - Pure SNES authenticity
 
-.btn {
+// SNES BASE BUTTON
+.btn-snes {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-sm) var(--space-md);
-  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
-  font-size: var(--font-size-sm);
-  font-weight: bold;
-  line-height: 1.4;
+  padding: var(--snes-space-small) var(--snes-space-base);
+  font-family: var(--font-snes-ui);
+  font-size: var(--snes-text-small);
+  font-weight: normal;
+  line-height: var(--line-snes-tight);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  border: none;
+  letter-spacing: 0;
+  border: 2px solid var(--snes-border-primary);
+  background: var(--snes-bg-surface);
+  color: var(--snes-text-primary);
   cursor: pointer;
-  transition: all var(--transition-fast);
   position: relative;
-  overflow: hidden;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  // NO MODERN EFFECTS - square corners, solid colors only
   
-  // Pixel-style borders
-  border: 3px solid transparent;
-  border-image: linear-gradient(45deg, #6a6aaa, #4a4a7a) 1;
+  // SNES button "pressed" state (instant, not animated)
+  &:active:not(:disabled) {
+    background: var(--snes-bg-secondary);
+    border-color: var(--snes-border-muted);
+    // NO TRANSFORM ANIMATIONS
+  }
   
   &:disabled {
-    opacity: 0.6;
+    color: var(--snes-text-disabled);
+    border-color: var(--snes-border-muted);
+    background: var(--snes-bg-tertiary);
     cursor: not-allowed;
     pointer-events: none;
   }
   
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.6);
+    // SNES selection indicator
+    border-color: #ffd700;
   }
-
-  // Retro button press effect
-  &:active:not(:disabled) {
-    transform: translate(1px, 1px);
+  
+  // NO HOVER ANIMATIONS - SNES doesn't have smooth transitions
+  &:hover:not(:disabled) {
+    border-color: var(--snes-border-secondary);
   }
 }
 
-// Primary button (adventure/action)
-.btn-primary {
-  background: linear-gradient(145deg, #5a9df2 0%, #4a90e2 50%, #357abd 100%);
-  color: white;
-  border-color: #2a5a8a;
-  box-shadow: 
-    0 4px 0 #2a5a8a,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  
-  &:hover:not(:disabled) {
-    background: linear-gradient(145deg, #6aabf2 0%, #5a9df2 50%, #4585cd 100%);
-    transform: translateY(-1px);
-    box-shadow: 
-      0 5px 0 #2a5a8a,
-      0 8px 12px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  }
+// SNES PRIMARY BUTTON (adventure/action)
+.btn-snes-primary {
+  background: var(--snes-blue-main);
+  color: var(--snes-text-primary);
+  border-color: var(--snes-blue-dark);
   
   &:active:not(:disabled) {
-    transform: translateY(2px);
-    box-shadow: 
-      0 2px 0 #2a5a8a,
-      0 3px 4px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: var(--snes-blue-dark);
+    border-color: var(--snes-blue-shadow);
+  }
+  
+  &:hover:not(:disabled) {
+    background: var(--snes-blue-light);
+  }
+  
+  &:focus {
+    border-color: #ffd700;
   }
 }
 
-// Secondary button (cancel/back)
-.btn-secondary {
-  background: linear-gradient(145deg, #6a6aaa 0%, #5a5a8a 50%, #4a4a7a 100%);
-  color: #e0e0f0;
-  border-color: #3a3a5a;
-  box-shadow: 
-    0 4px 0 #3a3a5a,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  
-  &:hover:not(:disabled) {
-    background: linear-gradient(145deg, #7a7aba 0%, #6a6aaa 50%, #5a5a8a 100%);
-    transform: translateY(-1px);
-    box-shadow: 
-      0 5px 0 #3a3a5a,
-      0 8px 12px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  }
+// SNES SECONDARY BUTTON (cancel/back)
+.btn-snes-secondary {
+  background: var(--snes-gray-main);
+  color: var(--snes-text-secondary);
+  border-color: var(--snes-gray-dark);
   
   &:active:not(:disabled) {
-    transform: translateY(2px);
-    box-shadow: 
-      0 2px 0 #3a3a5a,
-      0 3px 4px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    background: var(--snes-gray-dark);
+    border-color: var(--snes-gray-shadow);
   }
-}
-
-// Success button (healing/positive actions)
-.btn-success {
-  background: linear-gradient(145deg, #66bb6a 0%, #4caf50 50%, #388e3c 100%);
-  color: white;
-  border-color: #2e7d32;
-  box-shadow: 
-    0 4px 0 #2e7d32,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
   
   &:hover:not(:disabled) {
-    background: linear-gradient(145deg, #76cb7a 0%, #66bb6a 50%, #4caf50 100%);
-    transform: translateY(-1px);
-    box-shadow: 
-      0 5px 0 #2e7d32,
-      0 8px 12px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: var(--snes-gray-light);
+  }
+  
+  &:focus {
+    border-color: #ffd700;
   }
 }
 
-// Danger button (attack/destructive actions)
-.btn-danger {
-  background: linear-gradient(145deg, #ef5350 0%, #f44336 50%, #c62828 100%);
-  color: white;
-  border-color: #b71c1c;
-  box-shadow: 
-    0 4px 0 #b71c1c,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+// SNES SUCCESS BUTTON (healing/positive actions)
+.btn-snes-success {
+  background: var(--snes-success-green);
+  color: var(--snes-text-primary);
+  border-color: #388e3c;
+  
+  &:active:not(:disabled) {
+    background: #388e3c;
+    border-color: #2e7d32;
+  }
   
   &:hover:not(:disabled) {
-    background: linear-gradient(145deg, #ff6659 0%, #ef5350 50%, #d32f2f 100%);
-    transform: translateY(-1px);
-    box-shadow: 
-      0 5px 0 #b71c1c,
-      0 8px 12px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: #66bb6a;
+  }
+  
+  &:focus {
+    border-color: #ffd700;
   }
 }
 
-// Warning button (special abilities)
-.btn-warning {
-  background: linear-gradient(145deg, #ffb74d 0%, #ff9800 50%, #f57c00 100%);
-  color: white;
-  border-color: #ef6c00;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
-  box-shadow: 
-    0 4px 0 #ef6c00,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+// SNES DANGER BUTTON (attack/destructive actions)
+.btn-snes-danger {
+  background: var(--snes-error-red);
+  color: var(--snes-text-primary);
+  border-color: #e53935;
+  
+  &:active:not(:disabled) {
+    background: #e53935;
+    border-color: #c62828;
+  }
   
   &:hover:not(:disabled) {
-    background: linear-gradient(145deg, #ffc665 0%, #ffb74d 50%, #ff9800 100%);
-    transform: translateY(-1px);
-    box-shadow: 
-      0 5px 0 #ef6c00,
-      0 8px 12px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: #ef5350;
+  }
+  
+  &:focus {
+    border-color: #ffd700;
   }
 }
 
-// Character class themed buttons
-.btn-warrior {
-  background: linear-gradient(145deg, #ff8a80 0%, #ff6b6b 50%, #e53935 100%);
-  color: white;
-  border-color: #c62828;
-  box-shadow: 
-    0 4px 0 #c62828,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+// SNES WARNING BUTTON (special abilities)
+.btn-snes-warning {
+  background: var(--snes-warning-orange);
+  color: var(--snes-text-primary);
+  border-color: #f57c00;
+  
+  &:active:not(:disabled) {
+    background: #f57c00;
+    border-color: #ef6c00;
+  }
+  
+  &:hover:not(:disabled) {
+    background: #ffb74d;
+  }
+  
+  &:focus {
+    border-color: #ffd700;
+  }
 }
 
-.btn-mage {
-  background: linear-gradient(145deg, #80deea 0%, #4ecdc4 50%, #26a69a 100%);
-  color: white;
-  border-color: #00695c;
-  box-shadow: 
-    0 4px 0 #00695c,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+// SNES CHARACTER CLASS THEMED BUTTONS
+.btn-snes-warrior {
+  background: var(--snes-warrior-red);
+  color: var(--snes-text-primary);
+  border-color: #e53935;
+  
+  &:active:not(:disabled) {
+    background: #e53935;
+    border-color: #c62828;
+  }
+  
+  &:hover:not(:disabled) {
+    background: #ff8a80;
+  }
+  
+  &:focus {
+    border-color: #ffd700;
+  }
 }
 
-.btn-rogue {
-  background: linear-gradient(145deg, #64b5f6 0%, #45b7d1 50%, #1976d2 100%);
-  color: white;
-  border-color: #0d47a1;
-  box-shadow: 
-    0 4px 0 #0d47a1,
-    0 6px 8px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+.btn-snes-mage {
+  background: var(--snes-mage-teal);
+  color: var(--snes-text-primary);
+  border-color: #26a69a;
+  
+  &:active:not(:disabled) {
+    background: #26a69a;
+    border-color: #00695c;
+  }
+  
+  &:hover:not(:disabled) {
+    background: #80deea;
+  }
+  
+  &:focus {
+    border-color: #ffd700;
+  }
 }
 
-// Button sizes
-.btn-sm {
-  padding: var(--space-xs) var(--space-sm);
-  font-size: var(--font-size-xs);
+.btn-snes-rogue {
+  background: var(--snes-rogue-blue);
+  color: var(--snes-text-primary);
+  border-color: #1976d2;
+  
+  &:active:not(:disabled) {
+    background: #1976d2;
+    border-color: #0d47a1;
+  }
+  
+  &:hover:not(:disabled) {
+    background: #64b5f6;
+  }
+  
+  &:focus {
+    border-color: #ffd700;
+  }
 }
 
-.btn-lg {
-  padding: var(--space-md) var(--space-lg);
-  font-size: var(--font-size-lg);
-  font-weight: bold;
+// SNES BUTTON SIZES (Fixed pixel values)
+.btn-snes-small {
+  padding: var(--snes-space-tiny) var(--snes-space-small);
+  font-size: var(--snes-text-tiny);
 }
 
-.btn-xl {
-  padding: var(--space-lg) var(--space-xl);
-  font-size: var(--font-size-xl);
-  font-weight: bold;
+.btn-snes-large {
+  padding: var(--snes-space-base) var(--snes-space-large);
+  font-size: var(--snes-text-base);
 }
 
-// Icon buttons
-.btn-icon {
-  width: 40px;
-  height: 40px;
+.btn-snes-huge {
+  padding: var(--snes-space-large) var(--snes-space-huge);
+  font-size: var(--snes-text-large);
+}
+
+// SNES ICON BUTTONS (Square pixel-perfect)
+.btn-snes-icon {
+  width: 32px;
+  height: 32px;
   padding: 0;
-  border-radius: 4px;
-  font-size: 1.2rem;
+  font-size: var(--snes-text-base);
   
-  &.btn-icon-sm {
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
+  &.btn-snes-icon-small {
+    width: 24px;
+    height: 24px;
+    font-size: var(--snes-text-small);
   }
   
-  &.btn-icon-lg {
+  &.btn-snes-icon-large {
     width: 48px;
     height: 48px;
-    font-size: 1.4rem;
+    font-size: var(--snes-text-large);
   }
 }
 
-// Button groups
-.btn-group {
+// SNES BUTTON GROUPS (No rounded corners)
+.btn-snes-group {
   display: flex;
   
-  .btn {
-    border-radius: 0;
-    margin-right: -3px;
+  .btn-snes {
+    margin-right: -2px; // Overlap borders
     
     &:first-child {
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px;
+      // First button stays square
     }
     
     &:last-child {
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
       margin-right: 0;
+      // Last button stays square
+    }
+    
+    &:not(:first-child):not(:last-child) {
+      // Middle buttons stay square
     }
   }
 }
 
-// Loading state
-.btn-loading {
-  .btn-spinner {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-top-color: currentColor;
-    border-radius: 50%;
-    animation: btn-spin 1s linear infinite;
-  }
-}
-
-@keyframes btn-spin {
-  to { transform: rotate(360deg); }
-}
-
-// Responsive adjustments
-@media (max-width: 480px) {
-  .btn {
-    padding: var(--space-sm) var(--space-sm);
-    font-size: var(--font-size-xs);
+// SNES LOADING STATE (NO SPINNERS - just text)
+.btn-snes-loading {
+  color: var(--snes-text-muted);
+  
+  &::after {
+    content: '...';
   }
   
-  .btn-lg {
-    padding: var(--space-sm) var(--space-md);
-    font-size: var(--font-size-base);
+  // NO SPINNER ANIMATIONS - SNES uses static indicators
+}
+
+// SNES MENU SELECTION INDICATOR
+.btn-snes-selected {
+  border-color: #ffd700;
+  background: var(--snes-bg-secondary);
+  
+  &::before {
+    content: '\u25b6';
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffd700;
+    font-size: var(--snes-text-base);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: auto;
   }
 }
+
+// NO RESPONSIVE SCALING - SNES buttons maintain fixed pixel sizes
+// Authentic 16-bit experience requires consistent button dimensions

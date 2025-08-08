@@ -35,7 +35,28 @@ Use project-manager to [task description]
 5. **No direct implementation without PM orchestration**
 
 ## Commands to Run
-- No specific build/test commands yet - will be added as project develops
+
+### Current Development Setup
+```bash
+# Backend (Mock Server)
+cd server && node src/simple-server.js
+
+# Frontend (Vite Dev Server)
+cd client && npm run dev
+
+# Docker (Alternative)
+docker-compose up -d
+```
+
+### Infrastructure Scripts
+```bash
+# Database setup (when using Prisma)
+scripts/dev-setup.sh        # Linux/Mac
+scripts/dev-setup.bat       # Windows
+
+# Server management
+scripts/restart-servers.bat # Windows restart utility
+```
 
 ## Technology Stack
 - **Backend**: Node.js + Express + Socket.io + PostgreSQL + Redis

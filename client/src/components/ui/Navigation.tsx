@@ -20,24 +20,24 @@ const Navigation: React.FC = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <NavLink to="/dashboard" className="brand-link">
-            <span className="brand-icon">🏰</span>
+            <div className="nav-icon-sprite home"></div>
             <span className="brand-text">Dungeon Crawler</span>
           </NavLink>
         </div>
 
         <div className="nav-links">
           <NavLink to="/dashboard" className="nav-link">
-            <span className="nav-icon">📊</span>
+            <div className="nav-icon-sprite experience"></div>
             Dashboard
           </NavLink>
           
           <NavLink to="/characters" className="nav-link">
-            <span className="nav-icon">👤</span>
+            <div className="character-portrait small warrior"></div>
             Characters
           </NavLink>
           
           <NavLink to="/town" className="nav-link">
-            <span className="nav-icon">🏘️</span>
+            <div className="nav-icon-sprite home"></div>
             Town
           </NavLink>
 
@@ -58,7 +58,7 @@ const Navigation: React.FC = () => {
             <span className="username">{user?.username}</span>
           </div>
           <button onClick={handleLogout} className="logout-btn">
-            <span className="logout-icon">🚪</span>
+            <div className="nav-icon-sprite logout"></div>
             Logout
           </button>
         </div>

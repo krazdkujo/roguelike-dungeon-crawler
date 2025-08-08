@@ -79,34 +79,37 @@ roguelike-dungeon-crawler/
 - Docker and Docker Compose
 - Node.js 18+ (for local development)
 
-### Development Setup
+### Quick Setup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/krazdkujo/roguelike-dungeon-crawler.git
+git clone <repository-url>
 cd roguelike-dungeon-crawler
 ```
 
-2. Start the development environment:
+2. **Option 1: Docker Development Environment**
 ```bash
 docker-compose up -d
+# Access at http://localhost:3000
 ```
 
-3. Access the application:
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:3001
-
-### Testing
-
-The backend includes comprehensive test scripts:
-
+3. **Option 2: Local Development (Current)**
 ```bash
-# Test all endpoints
-node server/test-endpoints.js
+# Start backend server
+cd server
+node src/simple-server.js
+# Server runs on http://localhost:3005
 
-# Test combat and loot system
-node server/test-combat-loot.js
+# Start frontend (new terminal)
+cd client
+npm run dev
+# Frontend available at http://localhost:3003
 ```
+
+### Current Configuration
+- **Backend**: Simple mock server on port 3005
+- **Frontend**: Vite dev server on port 3003 (auto-proxies API calls)
+- **Database**: In-memory mock storage (bypasses Prisma SSL issues)
 
 ## Architecture Principles
 

@@ -1,0 +1,361 @@
+// AUTHENTIC SNES DIALOG SYSTEM
+// Classic 1990s JRPG dialog boxes with pixel-perfect styling
+// NO MODERN EFFECTS - Pure SNES authenticity
+
+// SNES BASE DIALOG BOX
+.dialog-snes {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--snes-bg-dialog);
+  border: 2px solid var(--snes-border-primary);
+  border-bottom: none; // Classic SNES dialogs don't have bottom border
+  padding: var(--snes-space-base);
+  font-family: var(--font-snes-dialog);
+  font-size: var(--snes-text-small);
+  color: var(--snes-text-primary);
+  line-height: var(--line-snes-normal);
+  z-index: 1000;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  
+  // SNES inner border (classic double border effect)
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 1px solid var(--snes-border-muted);
+    pointer-events: none;
+  }
+  
+  // Dialog text area
+  .dialog-text-snes {
+    font-family: var(--font-snes-dialog);
+    font-size: var(--snes-text-small);
+    line-height: var(--line-snes-normal);
+    color: var(--snes-text-primary);
+    margin-bottom: var(--snes-space-base);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: auto;
+    
+    // Speaker name styling
+    .speaker-snes {
+      color: #ffd700;
+      text-transform: uppercase;
+      font-size: var(--snes-text-tiny);
+      margin-bottom: var(--snes-space-tiny);
+      display: block;
+    }
+  }
+  
+  // Dialog controls (continue arrow, choices, etc.)
+  .dialog-controls-snes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--snes-space-base);
+    
+    .dialog-continue-snes {
+      color: #ffd700;
+      font-size: var(--snes-text-base);
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: auto;
+      // Classic blinking arrow
+      &::after {
+        content: '\u25bc';
+        margin-left: var(--snes-space-small);
+      }
+    }
+  }
+}
+
+// SNES CHOICE DIALOG
+.dialog-snes-choice {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--snes-bg-surface);
+  border: 2px solid var(--snes-border-primary);
+  padding: var(--snes-space-base);
+  min-width: 320px;
+  z-index: 1001;
+  
+  // Inner border
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 1px solid var(--snes-border-muted);
+    pointer-events: none;
+  }
+  
+  .choice-title-snes {
+    font-family: var(--font-snes-ui);
+    font-size: var(--snes-text-base);
+    color: var(--snes-text-primary);
+    margin-bottom: var(--snes-space-base);
+    text-align: center;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: auto;
+  }
+  
+  .choices-list-snes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--snes-space-small);
+    
+    .choice-item-snes {
+      padding: var(--snes-space-small) var(--snes-space-base);
+      background: var(--snes-bg-secondary);
+      border: 1px solid var(--snes-border-muted);
+      font-family: var(--font-snes-ui);
+      font-size: var(--snes-text-small);
+      color: var(--snes-text-primary);
+      cursor: pointer;
+      position: relative;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: auto;
+      
+      &:hover {
+        border-color: var(--snes-border-secondary);
+      }
+      
+      &.selected-snes {
+        background: var(--snes-bg-tertiary);
+        border-color: #ffd700;
+        
+        &::before {
+          content: '\u25b6';
+          position: absolute;
+          left: -16px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #ffd700;
+          font-size: var(--snes-text-small);
+        }
+      }
+    }
+  }
+}
+
+// SNES SHOP DIALOG
+.dialog-snes-shop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--snes-bg-overlay);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1002;
+  
+  .shop-window-snes {
+    background: var(--snes-bg-surface);
+    border: 2px solid var(--snes-border-primary);
+    padding: var(--snes-space-base);
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    
+    // Inner border
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      right: 4px;
+      bottom: 4px;
+      border: 1px solid var(--snes-border-muted);
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    .shop-header-snes {
+      font-family: var(--font-snes-ui);
+      font-size: var(--snes-text-base);
+      color: var(--snes-text-primary);
+      margin-bottom: var(--snes-space-base);
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: auto;
+    }
+    
+    .shop-content-snes {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: var(--snes-space-base);
+      flex: 1;
+      min-height: 0;
+      
+      .items-list-snes {
+        border: 1px solid var(--snes-border-muted);
+        background: var(--snes-bg-tertiary);
+        overflow-y: auto;
+        padding: var(--snes-space-small);
+        
+        .item-snes {
+          padding: var(--snes-space-small);
+          border: 1px solid transparent;
+          margin-bottom: var(--snes-space-tiny);
+          cursor: pointer;
+          font-family: var(--font-snes-ui);
+          font-size: var(--snes-text-small);
+          -webkit-font-smoothing: none;
+          -moz-osx-font-smoothing: auto;
+          
+          &:hover {
+            background: var(--snes-bg-surface);
+            border-color: var(--snes-border-muted);
+          }
+          
+          &.selected-snes {
+            background: var(--snes-bg-secondary);
+            border-color: #ffd700;
+          }
+          
+          .item-name-snes {
+            color: var(--snes-text-primary);
+            font-size: var(--snes-text-small);
+          }
+          
+          .item-price-snes {
+            color: #ffd700;
+            font-size: var(--snes-text-tiny);
+          }
+        }
+      }
+      
+      .shop-info-snes {
+        border: 1px solid var(--snes-border-muted);
+        background: var(--snes-bg-tertiary);
+        padding: var(--snes-space-small);
+        
+        .player-gold-snes {
+          font-family: var(--font-snes-ui);
+          font-size: var(--snes-text-small);
+          color: #ffd700;
+          margin-bottom: var(--snes-space-base);
+          -webkit-font-smoothing: none;
+          -moz-osx-font-smoothing: auto;
+        }
+        
+        .item-details-snes {
+          .detail-name-snes {
+            font-family: var(--font-snes-ui);
+            font-size: var(--snes-text-small);
+            color: var(--snes-text-primary);
+            margin-bottom: var(--snes-space-tiny);
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: auto;
+          }
+          
+          .detail-description-snes {
+            font-family: var(--font-snes-ui);
+            font-size: var(--snes-text-tiny);
+            color: var(--snes-text-secondary);
+            line-height: var(--line-snes-normal);
+            margin-bottom: var(--snes-space-base);
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: auto;
+          }
+        }
+      }
+    }
+    
+    .shop-controls-snes {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--snes-space-base);
+      
+      .btn-snes {
+        font-size: var(--snes-text-small);
+      }
+    }
+  }
+}
+
+// SNES STATUS/SYSTEM MESSAGES
+.status-snes {
+  position: fixed;
+  top: var(--snes-space-base);
+  right: var(--snes-space-base);
+  background: var(--snes-bg-surface);
+  border: 2px solid var(--snes-border-primary);
+  padding: var(--snes-space-base);
+  max-width: 320px;
+  z-index: 999;
+  
+  .status-message-snes {
+    font-family: var(--font-snes-ui);
+    font-size: var(--snes-text-small);
+    color: var(--snes-text-primary);
+    line-height: var(--line-snes-normal);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: auto;
+  }
+  
+  &.status-error-snes {
+    border-color: var(--snes-error-red);
+    
+    .status-message-snes {
+      color: var(--snes-error-red);
+    }
+  }
+  
+  &.status-success-snes {
+    border-color: var(--snes-success-green);
+    
+    .status-message-snes {
+      color: var(--snes-success-green);
+    }
+  }
+  
+  &.status-warning-snes {
+    border-color: var(--snes-warning-orange);
+    
+    .status-message-snes {
+      color: var(--snes-warning-orange);
+    }
+  }
+}
+
+// SNES LOADING DIALOG
+.loading-snes-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--snes-bg-surface);
+  border: 2px solid var(--snes-border-primary);
+  padding: var(--snes-space-huge);
+  text-align: center;
+  z-index: 1003;
+  
+  .loading-text-snes {
+    font-family: var(--font-snes-ui);
+    font-size: var(--snes-text-base);
+    color: var(--snes-text-primary);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: auto;
+    
+    &::after {
+      content: '...';
+    }
+  }
+}
+
+// NO ANIMATIONS OR TRANSITIONS - SNES dialogs appear/disappear instantly
+// All transitions should be handled by JavaScript state changes, not CSS

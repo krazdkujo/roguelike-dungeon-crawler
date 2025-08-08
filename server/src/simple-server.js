@@ -1,3 +1,18 @@
+/**
+ * Roguelike Dungeon Crawler - Mock API Server
+ * 
+ * A development server providing mock endpoints for the game client.
+ * This server implements a full game API with in-memory storage for:
+ * - User authentication (mock JWT)
+ * - Character management
+ * - Combat system
+ * - Inventory & crafting
+ * - Dungeon exploration
+ * 
+ * @version 1.0.0
+ * @author Claude Code Agent System
+ */
+
 const express = require('express');
 const cors = require('cors');
 

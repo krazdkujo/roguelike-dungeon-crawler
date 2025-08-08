@@ -1,0 +1,391 @@
+// SNES JRPG Sprite Assets
+// Pixel-perfect sprite styling for authentic retro game feel
+
+// Base sprite styles
+.sprite {
+  display: inline-block;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  object-fit: contain;
+  
+  // Prevent anti-aliasing for pixel-perfect rendering
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+// Navigation Icons
+.nav-icon-sprite {
+  @extend .sprite;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  
+  &.home {
+    background-image: url('/assets/ui/nav-home-icon-1x.png');
+  }
+  
+  &.logout {
+    background-image: url('/assets/ui/icon-logout-24-1x.png');
+  }
+  
+  &.settings {
+    background-image: url('/assets/ui/icon-settings-24-1x.png');
+  }
+  
+  &.experience {
+    background-image: url('/assets/ui/icon-experience-gem-32-1x.png');
+    width: 32px;
+    height: 32px;
+  }
+  
+  &.health {
+    background-image: url('/assets/ui/icon-health-heart-16-1x.png');
+    width: 16px;
+    height: 16px;
+  }
+  
+  &.sword {
+    background-image: url('/assets/ui/icon-sword-32-1x.png');
+    width: 32px;
+    height: 32px;
+  }
+  
+  &.magic {
+    background-image: url('/assets/ui/icon-magic-32-1x.png');
+    width: 32px;
+    height: 32px;
+  }
+}
+
+// Character Portraits
+.character-portrait {
+  @extend .sprite;
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  border: 2px solid var(--color-border);
+  
+  &.warrior {
+    background-image: url('/assets/characters/warrior-portrait-main-1x.png');
+  }
+  
+  &.mage {
+    background-image: url('/assets/characters/mage-portrait-main-1x.png');
+  }
+  
+  &.rogue {
+    background-image: url('/assets/characters/rogue-portrait-main-1x.png');
+  }
+  
+  // Large version for character creation
+  &.large {
+    width: 96px;
+    height: 96px;
+  }
+  
+  // Small version for navigation
+  &.small {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+// Character Sprites (animated)
+.character-sprite {
+  @extend .sprite;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  // Warrior sprites
+  &.warrior-idle {
+    background-image: url('/assets/characters/warrior-sprite-idle-32-1x.png');
+  }
+  
+  &.warrior-walk {
+    background-image: url('/assets/characters/warrior-sprite-walk-32-1x.png');
+    animation: sprite-bounce 0.6s ease-in-out infinite alternate;
+  }
+  
+  // Mage sprites
+  &.mage-idle {
+    background-image: url('/assets/characters/mage-sprite-idle-32-1x.png');
+  }
+  
+  &.mage-cast {
+    background-image: url('/assets/characters/mage-sprite-cast-32-1x.png');
+    animation: sprite-glow 1s ease-in-out infinite alternate;
+  }
+  
+  // Rogue sprites
+  &.rogue-idle {
+    background-image: url('/assets/characters/rogue-sprite-idle-32-1x.png');
+  }
+  
+  &.rogue-attack {
+    background-image: url('/assets/characters/rogue-sprite-attack-32-1x.png');
+    animation: sprite-flash 0.3s ease-in-out;
+  }
+}
+
+// Item Icons
+.item-sprite {
+  @extend .sprite;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  // Weapons
+  &.sword-iron {
+    background-image: url('/assets/items/item-sword-iron-32-1x.png');
+  }
+  
+  &.sword-steel {
+    background-image: url('/assets/items/item-sword-steel-32-1x.png');
+  }
+  
+  &.staff-wood {
+    background-image: url('/assets/items/item-staff-wood-32-1x.png');
+  }
+  
+  // Armor
+  &.armor-leather {
+    background-image: url('/assets/items/item-armor-leather-32-1x.png');
+  }
+  
+  // Generic items
+  &.shield {
+    background-image: url('/assets/items/icon-shield-32-1x.png');
+  }
+  
+  &.potion-healing {
+    background-image: url('/assets/items/icon-potion-healing-32-1x.png');
+  }
+  
+  &.chest {
+    background-image: url('/assets/items/icon-chest-32-1x.png');
+  }
+  
+  // Small version (16px) for inventory lists
+  &.small {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+// Button Sprites
+.btn-sprite {
+  @extend .sprite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  min-height: 32px;
+  padding: 8px 16px;
+  
+  &.primary {
+    background-image: url('/assets/ui/button-primary-normal-1x.png');
+    
+    &:hover {
+      filter: brightness(1.1);
+    }
+    
+    &:active {
+      filter: brightness(0.95);
+      transform: translate(1px, 1px);
+    }
+  }
+  
+  &.secondary {
+    background-image: url('/assets/ui/button-secondary-normal-1x.png');
+    
+    &:hover {
+      filter: brightness(1.1);
+    }
+    
+    &:active {
+      filter: brightness(0.95);
+      transform: translate(1px, 1px);
+    }
+  }
+  
+  &.danger {
+    background-image: url('/assets/ui/button-danger-normal-1x.png');
+    
+    &:hover {
+      filter: brightness(1.1);
+    }
+    
+    &:active {
+      filter: brightness(0.95);
+      transform: translate(1px, 1px);
+    }
+  }
+  
+  &.success {
+    background-image: url('/assets/ui/button-success-normal-1x.png');
+    
+    &:hover {
+      filter: brightness(1.1);
+    }
+    
+    &:active {
+      filter: brightness(0.95);
+      transform: translate(1px, 1px);
+    }
+  }
+}
+
+// Loading Spinner
+.loading-sprite {
+  @extend .sprite;
+  width: 32px;
+  height: 32px;
+  background-image: url('/assets/ui/loading-spinner-32-1x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: sprite-spin 1s linear infinite;
+  display: inline-block;
+}
+
+// Background Sprites
+.background-sprite {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  position: relative;
+  min-height: 100vh;
+  
+  // Add dark overlay to ensure text readability
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  // Ensure all child content appears above the overlay
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  &.town {
+    background-image: url('/assets/backgrounds/bg-town-512-1x.png');
+  }
+  
+  &.town-market {
+    background-image: url('/assets/backgrounds/bg-town-market-512-1x.png');
+  }
+  
+  &.combat-arena {
+    background-image: url('/assets/backgrounds/bg-combat-arena-512-1x.png');
+  }
+  
+  &.dungeon-corridor {
+    background-image: url('/assets/backgrounds/bg-dungeon-corridor-512-1x.png');
+  }
+}
+
+// Animations
+@keyframes sprite-bounce {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-2px); }
+}
+
+@keyframes sprite-glow {
+  0% { filter: brightness(1) drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)); }
+  100% { filter: brightness(1.2) drop-shadow(0 0 8px rgba(255, 255, 255, 0.6)); }
+}
+
+@keyframes sprite-flash {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.5) contrast(1.2); }
+  100% { filter: brightness(1); }
+}
+
+@keyframes sprite-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+// Utility classes for common sprite operations
+.sprite-hover-grow {
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.sprite-clickable {
+  cursor: pointer;
+  transition: filter 0.2s ease;
+  
+  &:hover {
+    filter: brightness(1.1);
+  }
+  
+  &:active {
+    filter: brightness(0.9);
+    transform: scale(0.98);
+  }
+}
+
+// Responsive sprite scaling
+@media (max-width: 768px) {
+  .character-portrait {
+    &.large {
+      width: 64px;
+      height: 64px;
+    }
+  }
+  
+  .nav-icon-sprite {
+    width: 20px;
+    height: 20px;
+    
+    &.experience, &.sword, &.magic {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .character-portrait {
+    width: 48px;
+    height: 48px;
+    
+    &.large {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  
+  .character-sprite, .item-sprite {
+    width: 24px;
+    height: 24px;
+  }
+}

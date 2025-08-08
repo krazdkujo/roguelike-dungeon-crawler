@@ -20,7 +20,9 @@
       "Bash(mv:*)",
       "Bash(copy:*)",
       "Bash(cp:*)",
-      "Bash(start /B node:*)"
+      "Bash(start /B node:*)",
+      "Bash(robocopy:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }

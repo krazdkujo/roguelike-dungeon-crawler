@@ -1,3 +1,14 @@
+/**
+ * Roguelike Dungeon Crawler - Main Application Component
+ * 
+ * Root React component that handles:
+ * - Authentication state initialization
+ * - Route configuration (public and protected)
+ * - Loading states and navigation
+ * 
+ * @component
+ */
+
 import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '@/stores/hooks'

@@ -19,19 +19,19 @@ interface CharacterCreationForm {
 const CHARACTER_CLASSES = {
   warrior: {
     name: 'Warrior',
-    icon: '⚔️',
+    icon: 'warrior',
     description: 'Masters of melee combat with high strength and defense',
     baseStats: { strength: 8, intelligence: 3, dexterity: 5, vitality: 7 }
   },
   mage: {
     name: 'Mage',
-    icon: '🔮',
+    icon: 'mage',
     description: 'Wielders of magic with high intelligence and magical power',
     baseStats: { strength: 3, intelligence: 8, dexterity: 4, vitality: 5 }
   },
   rogue: {
     name: 'Rogue',
-    icon: '🗡️',
+    icon: 'rogue',
     description: 'Swift and cunning fighters with high dexterity and stealth',
     baseStats: { strength: 5, intelligence: 4, dexterity: 8, vitality: 6 }
   }
@@ -132,7 +132,7 @@ const CharacterCreation: React.FC = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="character-form">
         {error && (
           <div className="card-status status-error">
-            <span className="status-icon">⚠️</span>
+            <div className="nav-icon-sprite settings"></div>
             <div className="status-content">
               <div className="status-title">Creation Failed</div>
               <div className="status-message">{error}</div>
@@ -181,7 +181,7 @@ const CharacterCreation: React.FC = () => {
                   value={key}
                 />
                 <label htmlFor={key} className="class-card">
-                  <span className="class-icon">{classInfo.icon}</span>
+                  <div className={`character-portrait large ${classInfo.icon}`}></div>
                   <h4 className="class-name">{classInfo.name}</h4>
                   <p className="class-description">{classInfo.description}</p>
                   <div className="class-base-stats">
@@ -264,9 +264,7 @@ const CharacterCreation: React.FC = () => {
         <div className="form-section">
           <h3 className="heading-section">Character Preview</h3>
           <div className="card-character character-preview">
-            <div className="character-portrait">
-              {CHARACTER_CLASSES[selectedClass].icon}
-            </div>
+            <div className={`character-portrait large ${CHARACTER_CLASSES[selectedClass].icon}`}></div>
             <div className={`character-class class-${selectedClass}`}>
               {CHARACTER_CLASSES[selectedClass].name}
             </div>
@@ -288,19 +286,19 @@ const CharacterCreation: React.FC = () => {
           <button
             type="button"
             onClick={() => navigate('/characters')}
-            className="btn btn-secondary"
+            className="btn-sprite secondary"
             disabled={loading}
           >
             Cancel
           </button>
           <button
             type="submit"
-            className="btn btn-primary btn-lg"
+            className="btn-sprite primary"
             disabled={loading || !isValid || availablePoints < 0}
           >
             {loading ? (
               <>
-                <span className="btn-spinner"></span>
+                <div className="loading-sprite"></div>
                 Creating Character...
               </>
             ) : (

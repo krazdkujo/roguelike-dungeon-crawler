@@ -6,6 +6,8 @@
 @import './components/buttons.scss';
 @import './components/cards.scss';
 @import './components/forms.scss';
+@import './components/sprites.scss';
+@import './components/dialogs.scss';
 
 // Reset and base styles
 * {
@@ -16,182 +18,168 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: var(--font-mono);
-  line-height: 1.6;
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  -webkit-font-smoothing: auto;
+  font-family: var(--font-snes-pixel);
+  font-size: var(--snes-text-base);
+  line-height: var(--line-snes-normal);
+  background: var(--snes-bg-primary);
+  color: var(--snes-text-primary);
+  -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: auto;
+  font-smooth: never;
+  text-rendering: auto;
+  image-rendering: pixelated;
 }
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--bg-primary);
-  
-  // Retro scanline effect (subtle)
-  &::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(0, 0, 0, 0.1) 2px,
-      rgba(0, 0, 0, 0.1) 4px
-    );
-    pointer-events: none;
-    z-index: 9999;
-    opacity: 0.3;
-  }
+  background: var(--snes-bg-primary);
+  // NO MODERN EFFECTS - Pure SNES authenticity
 }
 
-// SNES Color Palette
+// AUTHENTIC SNES 15-BIT COLOR PALETTE
 :root {
-  // Primary colors
-  --color-primary: #4a90e2;
-  --color-primary-dark: #357abd;
-  --color-primary-light: #5a9df2;
+  // SNES Primary Blues (15-bit RGB values)
+  --snes-blue-light: #5a9df2;
+  --snes-blue-main: #4a90e2;
+  --snes-blue-dark: #357abd;
+  --snes-blue-shadow: #2a5a8a;
   
-  // Secondary colors
-  --color-secondary: #ffd700;
-  --color-secondary-dark: #e6c200;
-  --color-secondary-light: #fff033;
+  // SNES Grays and UI
+  --snes-gray-light: #6a6aaa;
+  --snes-gray-main: #5a5a8a;
+  --snes-gray-dark: #4a4a7a;
+  --snes-gray-shadow: #3a3a5a;
   
-  // Status colors
-  --color-success: #4caf50;
-  --color-warning: #ff9800;
-  --color-error: #ff6b6b;
-  --color-info: #2196f3;
+  // Character Class Colors
+  --snes-warrior-red: #ff6b6b;
+  --snes-mage-teal: #4ecdc4;
+  --snes-rogue-blue: #45b7d1;
   
-  // Character class colors
-  --color-warrior: #ff6b6b;
-  --color-mage: #4ecdc4;
-  --color-rogue: #45b7d1;
+  // Status and UI Colors
+  --snes-success-green: #4caf50;
+  --snes-warning-orange: #ff9800;
+  --snes-error-red: #ff6b6b;
+  --snes-info-blue: #2196f3;
   
-  // Rarity colors
-  --color-common: #9e9e9e;
-  --color-uncommon: #4caf50;
-  --color-rare: #2196f3;
-  --color-epic: #9c27b0;
-  --color-legendary: #ff9800;
+  // Rarity System
+  --snes-common-gray: #9e9e9e;
+  --snes-uncommon-green: #4caf50;
+  --snes-rare-blue: #2196f3;
+  --snes-epic-purple: #9c27b0;
+  --snes-legendary-gold: #ff9800;
   
-  // Dark theme (default)
-  --bg-primary: #1a1a2e;
-  --bg-secondary: #16213e;
-  --bg-tertiary: #0f1419;
-  --bg-surface: rgba(30, 30, 60, 0.95);
-  --bg-overlay: rgba(0, 0, 0, 0.7);
+  // SNES Dark Theme (Authentic 15-bit colors)
+  --snes-bg-primary: #1a1a2e;
+  --snes-bg-secondary: #16213e;
+  --snes-bg-tertiary: #0f1419;
+  --snes-bg-surface: #1e1e3c;
+  --snes-bg-dialog: #000018;
+  --snes-bg-overlay: #000000;
   
-  --text-primary: #ffffff;
-  --text-secondary: #e0e0f0;
-  --text-muted: #c0c0d0;
-  --text-disabled: #888899;
+  --snes-text-primary: #ffffff;
+  --snes-text-secondary: #e0e0f0;
+  --snes-text-muted: #c0c0d0;
+  --snes-text-disabled: #888899;
   
-  --border-primary: #4a4a7a;
-  --border-secondary: #6a6aaa;
-  --border-muted: #3a3a5a;
+  --snes-border-primary: #4a4a7a;
+  --snes-border-secondary: #6a6aaa;
+  --snes-border-muted: #3a3a5a;
   
-  // Spacing scale (based on 8px grid)
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
+  // SNES 8px Grid System (No sub-pixel values)
+  --snes-space-tiny: 4px;
+  --snes-space-small: 8px;
+  --snes-space-base: 16px;
+  --snes-space-large: 24px;
+  --snes-space-huge: 32px;
+  --snes-space-massive: 48px;
   
-  // Typography scale
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
+  // SNES Typography Scale (Fixed px values - no rem)
+  --snes-text-tiny: 8px;
+  --snes-text-small: 12px;
+  --snes-text-base: 16px;
+  --snes-text-large: 24px;
+  --snes-text-huge: 32px;
   
-  // Border radius
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
+  // NO BORDER RADIUS - SNES uses square corners only
+  --snes-radius: 0px;
   
-  // Shadows
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
-  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
+  // NO MODERN SHADOWS - SNES uses solid borders only
   
-  // Transitions
-  --transition-fast: 0.15s ease;
-  --transition-normal: 0.25s ease;
-  --transition-slow: 0.4s ease;
+  // NO SMOOTH TRANSITIONS - SNES changes are instant
 }
 
-// Typography
+// SNES TYPOGRAPHY
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 var(--space-md) 0;
-  font-weight: 600;
-  line-height: 1.3;
-  color: var(--text-primary);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0 0 var(--snes-space-base) 0;
+  font-weight: normal;
+  line-height: var(--line-snes-normal);
+  color: var(--snes-text-primary);
+  font-family: var(--font-snes-pixel);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  // NO TEXT SHADOWS
 }
 
-h1 { font-size: var(--font-size-3xl); }
-h2 { font-size: var(--font-size-2xl); }
-h3 { font-size: var(--font-size-xl); }
-h4 { font-size: var(--font-size-lg); }
-h5 { font-size: var(--font-size-base); }
-h6 { font-size: var(--font-size-sm); }
+h1 { font-size: var(--snes-text-huge); }
+h2 { font-size: var(--snes-text-large); }
+h3 { font-size: var(--snes-text-base); }
+h4 { font-size: var(--snes-text-base); }
+h5 { font-size: var(--snes-text-small); }
+h6 { font-size: var(--snes-text-small); }
 
 p {
-  margin: 0 0 var(--space-md) 0;
-  color: var(--text-secondary);
+  margin: 0 0 var(--snes-space-base) 0;
+  color: var(--snes-text-secondary);
+  font-family: var(--font-snes-ui);
+  font-size: var(--snes-text-small);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
 }
 
-// Links
+// SNES LINKS
 a {
-  color: var(--color-primary);
+  color: var(--snes-blue-main);
   text-decoration: none;
-  transition: color var(--transition-fast);
+  font-family: var(--font-snes-ui);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  // NO SMOOTH TRANSITIONS
   
   &:hover {
-    color: var(--color-primary-light);
+    color: var(--snes-blue-light);
   }
   
   &:focus {
-    outline: 2px solid var(--color-primary);
+    outline: 2px solid var(--snes-blue-main);
     outline-offset: 2px;
   }
 }
 
-// Utility classes
+// SNES UTILITY CLASSES
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 
-.text-primary { color: var(--text-primary); }
-.text-secondary { color: var(--text-secondary); }
-.text-muted { color: var(--text-muted); }
-.text-success { color: var(--color-success); }
-.text-warning { color: var(--color-warning); }
-.text-error { color: var(--color-error); }
+.text-snes-primary { color: var(--snes-text-primary); }
+.text-snes-secondary { color: var(--snes-text-secondary); }
+.text-snes-muted { color: var(--snes-text-muted); }
+.text-snes-success { color: var(--snes-success-green); }
+.text-snes-warning { color: var(--snes-warning-orange); }
+.text-snes-error { color: var(--snes-error-red); }
 
-// Character class colors
-.text-warrior { color: var(--color-warrior); }
-.text-mage { color: var(--color-mage); }
-.text-rogue { color: var(--color-rogue); }
+// SNES Character class colors
+.text-snes-warrior { color: var(--snes-warrior-red); }
+.text-snes-mage { color: var(--snes-mage-teal); }
+.text-snes-rogue { color: var(--snes-rogue-blue); }
 
-// Rarity colors
-.text-common { color: var(--color-common); }
-.text-uncommon { color: var(--color-uncommon); }
-.text-rare { color: var(--color-rare); }
-.text-epic { color: var(--color-epic); }
-.text-legendary { color: var(--color-legendary); }
+// SNES Rarity colors
+.text-snes-common { color: var(--snes-common-gray); }
+.text-snes-uncommon { color: var(--snes-uncommon-green); }
+.text-snes-rare { color: var(--snes-rare-blue); }
+.text-snes-epic { color: var(--snes-epic-purple); }
+.text-snes-legendary { color: var(--snes-legendary-gold); }
 
 // Spacing utilities
 .m-0 { margin: 0; }
@@ -221,101 +209,96 @@ a {
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
-// Common button base
-.btn {
+// SNES BUTTON BASE
+.btn-snes {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-sm) var(--space-md);
-  font-size: var(--font-size-base);
-  font-weight: 500;
-  line-height: 1.5;
-  border: none;
-  border-radius: var(--radius-md);
+  padding: var(--snes-space-small) var(--snes-space-base);
+  font-size: var(--snes-text-small);
+  font-weight: normal;
+  font-family: var(--font-snes-ui);
+  line-height: var(--line-snes-tight);
+  border: 2px solid var(--snes-border-primary);
+  border-radius: var(--snes-radius); // 0px - square corners
   cursor: pointer;
   text-decoration: none;
-  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  // NO TRANSITIONS - Instant SNES response
   position: relative;
-  overflow: hidden;
   
   &:disabled {
-    opacity: 0.6;
+    color: var(--snes-text-disabled);
+    border-color: var(--snes-border-muted);
     cursor: not-allowed;
     pointer-events: none;
   }
   
   &:focus {
-    outline: 2px solid var(--color-primary);
+    outline: 2px solid var(--snes-blue-main);
     outline-offset: 2px;
   }
 }
 
-// Common card/panel styling
-.panel {
-  background: var(--bg-surface);
-  border: 2px solid var(--border-primary);
-  border-radius: var(--radius-lg);
-  padding: var(--space-lg);
-  box-shadow: var(--shadow-md);
-  backdrop-filter: blur(10px);
+// SNES PANEL/CARD STYLING
+.panel-snes {
+  background: var(--snes-bg-surface);
+  border: 2px solid var(--snes-border-primary);
+  border-radius: var(--snes-radius); // 0px - square corners
+  padding: var(--snes-space-large);
+  // NO MODERN EFFECTS - solid SNES styling only
   
-  &.panel-sm { padding: var(--space-md); }
-  &.panel-lg { padding: var(--space-xl); }
+  &.panel-snes-small { padding: var(--snes-space-base); }
+  &.panel-snes-large { padding: var(--snes-space-huge); }
 }
 
-// Loading states
-.loading {
-  opacity: 0.6;
+// SNES LOADING STATES (NO ANIMATIONS)
+.loading-snes {
+  color: var(--snes-text-muted);
   pointer-events: none;
-  position: relative;
+  font-family: var(--font-snes-ui);
+  font-size: var(--snes-text-small);
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+  // Static loading text only - no spinners
   
   &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin: -10px 0 0 -10px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-top-color: var(--color-primary);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+    content: '...';
   }
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
+// NO SPIN ANIMATIONS - SNES doesn't have smooth animations
 
-// Scrollbar styling
+// SNES SCROLLBAR STYLING
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-tertiary);
+  background: var(--snes-bg-tertiary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-primary);
-  border-radius: 4px;
+  background: var(--snes-border-primary);
+  border-radius: 0px; // Square SNES corners
   
   &:hover {
-    background: var(--border-secondary);
+    background: var(--snes-border-secondary);
   }
 }
 
-// Selection styling
+// SNES SELECTION STYLING
 ::selection {
-  background: rgba(74, 144, 226, 0.3);
-  color: var(--text-primary);
+  background: var(--snes-blue-main);
+  color: var(--snes-text-primary);
 }
 
-// Focus indicators
+// SNES FOCUS INDICATORS
 :focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--snes-blue-main);
   outline-offset: 2px;
 }
 
@@ -340,12 +323,12 @@ a {
   }
 }
 
-// High contrast mode support
+// SNES HIGH CONTRAST MODE SUPPORT
 @media (prefers-contrast: high) {
   :root {
-    --bg-primary: #000000;
-    --bg-secondary: #1a1a1a;
-    --text-primary: #ffffff;
-    --border-primary: #ffffff;
+    --snes-bg-primary: #000000;
+    --snes-bg-secondary: #1a1a1a;
+    --snes-text-primary: #ffffff;
+    --snes-border-primary: #ffffff;
   }
 }

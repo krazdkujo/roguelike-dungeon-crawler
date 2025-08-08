@@ -286,9 +286,9 @@ const CombatPage: React.FC = () => {
   };
 
   return (
-    <div className="combat-page">
+    <div className="combat-page background-sprite combat-arena">
       <div className="combat-header">
-        <h1 className="heading-game-title">⚔️ Combat Arena</h1>
+        <h1 className="heading-game-title">Combat Arena</h1>
         <div className="combat-info">
           <span className="turn-counter">Turn {turn}</span>
           <span className="phase-indicator">{combatPhase}</span>

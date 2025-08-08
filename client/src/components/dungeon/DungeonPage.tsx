@@ -92,9 +92,9 @@ const DungeonPage: React.FC = () => {
   }
 
   return (
-    <div className="dungeon-page">
+    <div className="dungeon-page background-sprite dungeon-corridor">
       <div className="page-header">
-        <h1>🏰 Dungeon Explorer</h1>
+        <h1>Dungeon Explorer</h1>
         <p>Navigate through dangerous dungeons with your party</p>
       </div>
 
@@ -119,17 +119,17 @@ const DungeonPage: React.FC = () => {
       <div className="dungeon-actions panel">
         <h3>Available Actions</h3>
         <div className="action-grid">
-          <button className="btn btn-danger" onClick={startCombat}>
-            ⚔️ Enter Combat
+          <button className="btn-sprite danger" onClick={startCombat}>
+            Enter Combat
           </button>
-          <button className="btn btn-secondary" onClick={() => alert('Exploration coming soon!')}>
-            🚪 Explore Room
+          <button className="btn-sprite secondary" onClick={() => alert('Exploration coming soon!')}>
+            Explore Room
           </button>
-          <button className="btn btn-warning" onClick={() => alert('Treasure hunting coming soon!')}>
-            💰 Search for Treasure
+          <button className="btn-sprite success" onClick={() => alert('Treasure hunting coming soon!')}>
+            Search for Treasure
           </button>
-          <button className="btn btn-secondary" onClick={leaveDungeon}>
-            🚪 Leave Dungeon
+          <button className="btn-sprite secondary" onClick={leaveDungeon}>
+            Leave Dungeon
           </button>
         </div>
       </div>
@@ -137,12 +137,12 @@ const DungeonPage: React.FC = () => {
       <div className="dungeon-map panel">
         <h3>Dungeon Map</h3>
         <div className="map-placeholder">
-          <p>🗺️ Dungeon map will be displayed here</p>
+          <p>Dungeon map will be displayed here</p>
           <div className="simple-map">
-            <div className="room current-room">📍 Current Room</div>
-            <div className="room unexplored">❓ Unexplored</div>
-            <div className="room boss-room">👹 Boss Room</div>
-            <div className="room treasure">💰 Treasure</div>
+            <div className="room current-room"><div class="nav-icon-sprite home"></div> Current Room</div>
+            <div className="room unexplored"><div class="nav-icon-sprite settings"></div> Unexplored</div>
+            <div className="room boss-room"><div class="nav-icon-sprite sword"></div> Boss Room</div>
+            <div className="room treasure"><div class="item-sprite chest small"></div> Treasure</div>
           </div>
         </div>
       </div>

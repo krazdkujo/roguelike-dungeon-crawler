@@ -1,3 +1,10 @@
+/**
+ * Redux Store Configuration
+ * 
+ * Central state management for the Roguelike Dungeon Crawler.
+ * Manages authentication, game state, combat, and UI states.
+ */
+
 import { configureStore } from '@reduxjs/toolkit';
 import authSlice from './authSlice';
 import gameSlice from './gameSlice';

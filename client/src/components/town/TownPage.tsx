@@ -32,7 +32,7 @@ const TOWN_NPCS: NPC[] = [
     id: 'blacksmith',
     name: 'Master Gareth',
     role: 'Blacksmith',
-    icon: '🔨',
+    icon: 'sword',
     description: 'Forge and upgrade your weapons and armor',
     dialogue: [
       'Welcome to my forge, adventurer!',
@@ -45,7 +45,7 @@ const TOWN_NPCS: NPC[] = [
     id: 'alchemist',
     name: 'Sage Elara',
     role: 'Alchemist',
-    icon: '⚗️',
+    icon: 'potion-healing',
     description: 'Brew potions and magical elixirs',
     dialogue: [
       'Ah, another soul seeking the power of alchemy...',
@@ -58,7 +58,7 @@ const TOWN_NPCS: NPC[] = [
     id: 'trainer',
     name: 'Captain Marcus',
     role: 'Combat Trainer',
-    icon: '🏋️',
+    icon: 'sword',
     description: 'Train your combat skills and abilities',
     dialogue: [
       'Ready to improve your fighting prowess?',
@@ -71,7 +71,7 @@ const TOWN_NPCS: NPC[] = [
     id: 'merchant',
     name: 'Trader Finn',
     role: 'General Merchant',
-    icon: '💰',
+    icon: 'chest',
     description: 'Buy and sell general goods',
     dialogue: [
       'Come, come! Best prices in town!',
@@ -84,7 +84,7 @@ const TOWN_NPCS: NPC[] = [
     id: 'innkeeper',
     name: 'Molly Warmheart',
     role: 'Innkeeper',
-    icon: '🏠',
+    icon: 'health',
     description: 'Rest and recover your strength',
     dialogue: [
       'Welcome to the Sleeping Dragon Inn!',
@@ -97,7 +97,7 @@ const TOWN_NPCS: NPC[] = [
     id: 'guide',
     name: 'Explorer Kael',
     role: 'Dungeon Guide',
-    icon: '🗺️',
+    icon: 'experience',
     description: 'Information about dungeons and quests',
     dialogue: [
       'Seeking adventure in the deep places of the world?',
@@ -120,7 +120,7 @@ const TOWN_LOCATIONS: Location[] = [
   {
     id: 'arena',
     name: 'Combat Arena',
-    icon: '⚔️',
+    icon: 'sword',
     description: 'Test your skills against other players',
     available: true,
     requiresLevel: 3,
@@ -129,7 +129,7 @@ const TOWN_LOCATIONS: Location[] = [
   {
     id: 'guild-hall',
     name: 'Guild Hall',
-    icon: '🏛️',
+    icon: 'magic',
     description: 'Join a guild and participate in group activities',
     available: false,
     requiresLevel: 5,
@@ -138,7 +138,7 @@ const TOWN_LOCATIONS: Location[] = [
   {
     id: 'market-square',
     name: 'Market Square',
-    icon: '🏪',
+    icon: 'chest',
     description: 'Player marketplace for trading items',
     available: false,
     requiresLevel: 7,
@@ -237,56 +237,56 @@ const TownPage: React.FC = () => {
   };
 
   return (
-    <div className="town-page">
-      {/* Header with user stats */}
+    <div className="town-page background-sprite town">
+      {/* SNES Header with user stats */}
       <div className="town-header">
-        <h1 className="heading-game-title">🏘️ Town Square</h1>
-        <p className="text-secondary">Rest, resupply, and prepare for your next adventure</p>
+        <h1 className="heading-snes-title">Town Square</h1>
+        <p className="text-snes-secondary">Rest, resupply, and prepare for your next adventure</p>
         
-        <div className="user-stats">
-          <div className="stat-item">
-            <span className="stat-icon">⭐</span>
-            <span className="stat-label">Level</span>
-            <span className="stat-value">{userStats.level}</span>
+        <div className="menu-snes user-stats">
+          <div className="stat-snes">
+            <div className="nav-icon-sprite experience"></div>
+            <span className="text-snes-ui stat-label">LV</span>
+            <span className="text-snes-stat stat-value">{userStats.level}</span>
           </div>
-          <div className="stat-item">
-            <span className="stat-icon">💰</span>
-            <span className="stat-label">Gold</span>
-            <span className="stat-value">{userStats.gold}</span>
+          <div className="stat-snes">
+            <div className="item-sprite chest small"></div>
+            <span className="text-snes-ui stat-label">GP</span>
+            <span className="text-snes-stat stat-value">{userStats.gold}</span>
           </div>
-          <div className="stat-item">
-            <span className="stat-icon">❤️</span>
-            <span className="stat-label">HP</span>
-            <span className="stat-value">{userStats.health}/100</span>
+          <div className="stat-snes">
+            <div className="nav-icon-sprite health"></div>
+            <span className="text-snes-ui stat-label">HP</span>
+            <span className="text-snes-stat stat-hp stat-value">{userStats.health}/100</span>
           </div>
-          <div className="stat-item">
-            <span className="stat-icon">💙</span>
-            <span className="stat-label">MP</span>
-            <span className="stat-value">{userStats.mana}/100</span>
+          <div className="stat-snes">
+            <div className="nav-icon-sprite magic"></div>
+            <span className="text-snes-ui stat-label">MP</span>
+            <span className="text-snes-stat stat-mp stat-value">{userStats.mana}/100</span>
           </div>
         </div>
       </div>
 
       <div className="town-layout">
-        {/* NPCs Section */}
+        {/* SNES NPCs Section */}
         <div className="town-section">
-          <h2 className="heading-section">Town NPCs</h2>
-          <div className="npcs-grid">
+          <h2 className="heading-snes-section">Town NPCs</h2>
+          <div className="menu-snes-grid menu-snes-grid-3">
             {TOWN_NPCS.map((npc) => (
               <div
                 key={npc.id}
-                className="npc-card card"
+                className="menu-snes-character npc-card"
                 onClick={() => handleNPCClick(npc)}
               >
-                <div className="npc-icon">{npc.icon}</div>
+                <div className={`nav-icon-sprite ${npc.icon}`}></div>
                 <div className="npc-info">
-                  <h3 className="npc-name">{npc.name}</h3>
-                  <p className="npc-role text-class">{npc.role}</p>
-                  <p className="npc-description">{npc.description}</p>
+                  <h3 className="heading-snes-card npc-name">{npc.name}</h3>
+                  <p className="text-snes-class npc-role">{npc.role}</p>
+                  <p className="text-snes-ui npc-description">{npc.description}</p>
                 </div>
                 <div className="npc-services">
                   {npc.services?.slice(0, 2).map((service, index) => (
-                    <span key={index} className="service-tag">
+                    <span key={index} className="text-snes-ui service-tag">
                       {service}
                     </span>
                   ))}
@@ -296,35 +296,39 @@ const TownPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Locations Section */}
+        {/* SNES Locations Section */}
         <div className="town-section">
-          <h2 className="heading-section">Locations</h2>
-          <div className="locations-grid">
+          <h2 className="heading-snes-section">Locations</h2>
+          <div className="menu-snes-grid menu-snes-grid-2">
             {TOWN_LOCATIONS.map((location) => (
               <div
                 key={location.id}
-                className={`location-card card ${
+                className={`menu-snes location-card ${
                   location.available ? 'available' : 'unavailable'
                 }`}
                 onClick={() => handleLocationClick(location)}
               >
-                <div className="location-icon">{location.icon}</div>
+                <div className={`nav-icon-sprite ${location.icon}`}></div>
                 <div className="location-info">
-                  <h3 className="location-name">{location.name}</h3>
-                  <p className="location-description">{location.description}</p>
+                  <h3 className="heading-snes-card location-name">{location.name}</h3>
+                  <p className="text-snes-ui location-description">{location.description}</p>
                   {location.requiresLevel && (
-                    <p className="location-requirement">
+                    <p className="text-snes-warning location-requirement">
                       Requires Level {location.requiresLevel}
                     </p>
                   )}
                 </div>
                 <button
-                  className={`btn ${
-                    location.available ? 'btn-primary' : 'btn-secondary'
+                  className={`btn-snes ${
+                    location.available ? 'btn-snes-primary' : 'btn-snes-secondary'
                   }`}
                   disabled={!location.available || isLoading}
                 >
-                  {isLoading ? 'Loading...' : location.action}
+                  {isLoading ? (
+                    <span className="text-snes-loading">Loading</span>
+                  ) : (
+                    location.action
+                  )}
                 </button>
               </div>
             ))}
@@ -332,49 +336,55 @@ const TownPage: React.FC = () => {
         </div>
       </div>
 
-      {/* NPC Dialog Modal */}
+      {/* SNES NPC Dialog */}
       {selectedNPC && (
         <div className="dialog-overlay" onClick={closeNPCDialog}>
-          <div className="dialog-modal" onClick={(e) => e.stopPropagation()}>
-            <div className="dialog-header">
-              <div className="npc-portrait">{selectedNPC.icon}</div>
-              <div className="npc-info">
-                <h3 className="npc-name">{selectedNPC.name}</h3>
-                <p className="npc-role">{selectedNPC.role}</p>
+          <div className="dialog-snes-choice" onClick={(e) => e.stopPropagation()}>
+            <div className="dialog-header-snes">
+              <div className={`nav-icon-sprite ${selectedNPC.icon}`}></div>
+              <div className="npc-info-snes">
+                <h3 className="heading-snes-dialog npc-name">{selectedNPC.name}</h3>
+                <p className="text-snes-class npc-role">{selectedNPC.role}</p>
               </div>
-              <button className="dialog-close" onClick={closeNPCDialog}>
-                ❌
+              <button className="btn-snes btn-snes-danger dialog-close" onClick={closeNPCDialog}>
+                Close
               </button>
             </div>
             
-            <div className="dialog-content">
-              <div className="text-dialog">
-                <p>{selectedNPC.dialogue[dialogueIndex]}</p>
-              </div>
-              
-              {dialogueIndex < selectedNPC.dialogue.length - 1 ? (
-                <button
-                  className="btn btn-primary"
-                  onClick={handleDialogueContinue}
-                >
-                  Continue...
-                </button>
-              ) : (
-                <div className="services-list">
-                  <h4 className="services-title">Available Services:</h4>
-                  <div className="services-grid">
-                    {selectedNPC.services?.map((service, index) => (
-                      <button
-                        key={index}
-                        className="btn btn-secondary service-btn"
-                        onClick={() => handleServiceClick(service)}
-                      >
-                        {service}
-                      </button>
-                    ))}
-                  </div>
+            <div className="dialog-content-snes">
+              <div className="dialog-snes">
+                <div className="dialog-text-snes">
+                  <span className="speaker-snes">{selectedNPC.name}:</span>
+                  <p>{selectedNPC.dialogue[dialogueIndex]}</p>
                 </div>
-              )}
+                
+                {dialogueIndex < selectedNPC.dialogue.length - 1 ? (
+                  <div className="dialog-controls-snes">
+                    <button
+                      className="btn-snes btn-snes-primary"
+                      onClick={handleDialogueContinue}
+                    >
+                      Continue
+                    </button>
+                    <span className="dialog-continue-snes">Press to continue</span>
+                  </div>
+                ) : (
+                  <div className="services-list-snes">
+                    <h4 className="heading-snes-dialog services-title">Available Services:</h4>
+                    <div className="choices-list-snes">
+                      {selectedNPC.services?.map((service, index) => (
+                        <div
+                          key={index}
+                          className="choice-item-snes service-btn"
+                          onClick={() => handleServiceClick(service)}
+                        >
+                          {service}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
