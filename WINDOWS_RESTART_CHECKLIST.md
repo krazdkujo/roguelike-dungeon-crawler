@@ -127,6 +127,23 @@ Your **ROGUELIKE DUNGEON CRAWLER** has achieved **CRITICAL MILESTONE SUCCESS**!
 
 ---
 
+## 🚨 CURRENT ISSUES TO RESOLVE AFTER RESTART
+
+### CRITICAL PORT CONFIGURATION ISSUES ⚠️
+**Status: 500 Errors on Authentication Endpoints**
+
+**Problem Identified:**
+- Port conflicts preventing proper server communication
+- Proxy configuration mismatches between frontend and backend
+- Multiple server instances causing conflicts
+
+**Configuration After Restart:**
+- Backend Server: Port 3005 (updated in simple-server.js)
+- Frontend Server: Port 3003 (or first available port)
+- Proxy Target: http://localhost:3005
+
+---
+
 ## 🎯 RESTART RECOVERY STEPS
 
 ### 1. Verify Project Integrity ✅
@@ -135,26 +152,34 @@ Your **ROGUELIKE DUNGEON CRAWLER** has achieved **CRITICAL MILESTONE SUCCESS**!
 cd "C:\Dev\Testing the Agent Swarm"
 
 # Verify key files exist
-dir SESSION_SUMMARY.md         # Current session documentation
-dir simple-server.js           # Backend with all APIs
-dir client\                    # React frontend
-dir .git\                      # Git repository
-dir .gitignore                # Repository configuration
+dir WINDOWS_RESTART_CHECKLIST.md  # This recovery guide
+dir server\src\simple-server.js   # Backend with all APIs (PORT 3005)
+dir client\vite.config.ts         # Frontend config (proxy to 3005)
+dir .git\                          # Git repository
+dir .gitignore                     # Repository configuration
 ```
 
-### 2. Application Testing (OPTIONAL - Already Validated) ✅
-**If you want to test the application:**
+### 2. Start Servers with Correct Configuration ⚡
+**STEP-BY-STEP SERVER STARTUP:**
+
+**Terminal 1 - Backend (Port 3005):**
 ```bash
-# Start the backend (simple-server.js)
-node simple-server.js
-
-# In another terminal, start the frontend
-cd client
-npm start
+cd "C:\Dev\Testing the Agent Swarm\server"
+node src/simple-server.js
+# Should show: 🚀 Server running on port 3005
 ```
-**Access:** http://localhost:3000
 
-**Note:** Docker setup from previous session may still be available but current system uses simple-server.js
+**Terminal 2 - Frontend (Port 3003):**
+```bash
+cd "C:\Dev\Testing the Agent Swarm\client"
+npm run dev
+# Should show: Local: http://localhost:3003/
+```
+
+**Access Application:** http://localhost:3003
+**API Endpoint Test:** http://localhost:3005/health
+
+**Note:** Vite proxy automatically forwards /api calls from 3003 to 3005
 
 ### 3. Git Repository Status ✅
 **Repository is ready for GitHub:**
