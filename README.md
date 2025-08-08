@@ -83,7 +83,7 @@ roguelike-dungeon-crawler/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/krazdkujo/roguelike-dungeon-crawler.git
 cd roguelike-dungeon-crawler
 ```
 
