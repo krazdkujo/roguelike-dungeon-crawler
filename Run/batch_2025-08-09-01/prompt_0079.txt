@@ -1,0 +1,11 @@
+PHOENIX_FEATHER_RARE_ITEM.png
+
+Create a 16-bit SNES pixel art style rare item for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Luminous phoenix feather with eternal flames, radiating resurrection magic and divine fire energy
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels
+Colors: Limited 16-bit palette with brilliant golds, fiery reds, pure whites, and magical flame effects
+Background: Transparent for sprite layering
+Details: Ethereal plumage texture, perpetual flame aura, legendary rarity shimmer, sacred fire essence
+Format: PNG with crisp pixel-perfect edges

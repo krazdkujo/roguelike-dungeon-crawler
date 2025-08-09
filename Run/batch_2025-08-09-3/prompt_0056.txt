@@ -1,0 +1,11 @@
+paralyzed-status-icon-16-1x.png
+
+Create a 16-bit SNES pixel art style status effect icon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Paralyzed status effect icon with lightning bolts and frozen motion symbols
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels (status icon)
+Colors: Limited 16-bit palette with electric yellows, sharp whites, and static effects
+Background: Transparent for UI overlay systems
+Details: Jagged lightning, static electricity, motion-freeze symbols, sharp angles
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,6 @@
+HAUNTED_CEMETERY_DUNGEON_BACKGROUND.png
+
+Create a high-quality SNES JRPG style haunted cemetery dungeon background (512x384 pixels).
+Design: Misty graveyard with weathered tombstones. Gnarled dead trees silhouetted against dark sky. Fog rolling across ground. Ancient mausoleums in background. Eerie moonlight filtering through clouds.
+Style: 16-bit pixel art background, spooky atmospheric dungeon.
+Output: Full background suitable for undead-themed dungeon areas.

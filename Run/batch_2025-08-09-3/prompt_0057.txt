@@ -1,0 +1,11 @@
+blessed-status-icon-16-1x.png
+
+Create a 16-bit SNES pixel art style status effect icon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Blessed status effect icon with holy light rays and divine symbols
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels (status icon)
+Colors: Limited 16-bit palette with golden yellows, pure whites, and divine radiance
+Background: Transparent for UI overlay systems
+Details: Radiating light beams, angelic shimmer, holy cross or star, divine aura
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,11 @@
+REGENERATION_STATUS_ICON.png
+
+Create a 16-bit SNES pixel art style status effect icon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Healing regeneration symbol with life energy spirals, restoration magic, and continuous recovery indication
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels
+Colors: Limited 16-bit palette with healing greens, life energy yellows, pure whites, and restoration blues
+Background: Transparent for UI overlay
+Details: Regenerative symbolism, energy circulation, healing indication, positive status representation, life magic
+Format: PNG with crisp pixel-perfect edges

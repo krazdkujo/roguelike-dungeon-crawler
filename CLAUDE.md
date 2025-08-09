@@ -3,6 +3,14 @@
 ## Project Overview
 A multiplayer, browser-based, asynchronous roguelike dungeon crawler where players team up to defeat bosses for loot. Built as a modern full-stack web application with Node.js backend, PostgreSQL database, React frontend, and real-time WebSocket multiplayer capabilities.
 
+## Core Progression System: ADAPTIVE MASTERY
+**Selected System**: Activity-Based Skill Progression with Dynamic Mastery Evolution
+- 20 base skills that grow through actual gameplay activities
+- Dynamic mastery components that evolve based on playstyle
+- Synthesis actions that emerge from mastery combinations
+- Equipment resonance system where gear adapts to character masteries
+- Full specification: `meetings/ADAPTIVE_MASTERY_SYSTEM_SPECIFICATION.md`
+
 ## Agent System Configuration
 
 ### Primary Agent Workflow

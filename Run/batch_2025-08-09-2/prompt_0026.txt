@@ -1,0 +1,6 @@
+ROGUE_CHARACTER_STEALTH_SPRITE.png
+
+Create a high-quality SNES JRPG style rogue character stealth attack sprite (64x64 pixels).
+Design: Hooded rogue in dark green leather armor. Twin daggers drawn in striking pose. Semi-transparent shadowy effect showing stealth ability. Dynamic action pose mid-attack.
+Style: 16-bit pixel art, detailed character sprite, stealth atmosphere.
+Output: Single character sprite with transparency effects for stealth.

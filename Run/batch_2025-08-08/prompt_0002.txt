@@ -1,0 +1,10 @@
+MAGE CLASS - SPELLCASTING COMBAT SPRITE
+
+Generate a 16-bit SNES pixel art style mage character sprite in active spellcasting pose. The mage should be wearing flowing robes in deep purple and gold colors, with arms raised and magical energy swirling around their hands.
+
+Art Style: Classic SNES JRPG pixel art with detailed sprite work
+Dimensions: 32x32 pixels for game integration
+Colors: Rich purple robes, gold trim, blue magical energy effects, pale skin
+Animation Frame: Mid-cast pose with visible magical aura
+Background: Transparent
+Details: Pointed wizard hat, long beard, staff held in one hand, magical sparkles around figure, mystical symbols on robe, intense concentration expression

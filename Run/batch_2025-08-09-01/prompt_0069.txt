@@ -1,0 +1,11 @@
+ENCHANTED_BOW_WEAPON_SPRITE.png
+
+Create a 16-bit SNES pixel art style weapon sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Elegant elven longbow crafted from mystical wood with glowing runes and ethereal string
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with rich browns, forest greens, golden runes, and magical shimmer effects
+Background: Transparent for sprite layering
+Details: Curved elvish design, intricate wood grain, glowing enchantments, delicate craftsmanship, silver accents
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,10 @@
+SPELL CASTING EFFECT ANIMATION SPRITES
+
+Generate a 16-bit SNES pixel art style collection of magical spell effect sprites for combat animations. Include fireball explosion, ice crystal formation, and lightning strike effects.
+
+Art Style: Dynamic SNES JRPG spell effect sprites with impact
+Dimensions: 64x64 pixels each effect for combat screen
+Colors: Fireball (bright orange/red/yellow), ice crystal (blue/white/cyan), lightning (white/yellow/purple)
+Layout: Three separate magical effect sprites showing moment of impact
+Background: Transparent for combat overlay
+Details: Fireball explosion with radiating flame patterns, scattered ember particles; Ice crystal formation with sharp angular crystals, frost spread pattern; Lightning strike with jagged bolt, electrical crackling effects; each effect showing peak intensity moment, dramatic visual impact, particle effects extending beyond main shape

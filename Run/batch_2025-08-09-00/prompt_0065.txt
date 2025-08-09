@@ -1,0 +1,11 @@
+FROST_GIANT_BOSS_SPRITE.png
+
+Create a 16-bit SNES pixel art style boss enemy for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Towering frost giant wielding an icy war hammer, with crystalline blue skin and frozen beard
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with icy blues, whites, silver metallics, and frost particle effects
+Background: Transparent for sprite layering
+Details: Massive proportions, ice armor plating, glowing blue eyes, frozen breath vapor, intimidating stance
+Format: PNG with crisp pixel-perfect edges

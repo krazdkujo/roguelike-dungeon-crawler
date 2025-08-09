@@ -1,0 +1,13 @@
+# FAILURE LOG - Prompts that generated rejected images
+# Format: [Date] | [Prompt Number] | [Failure Reason] | [Action Taken]
+# =====================================================================
+
+[2025-08-09] | [Batch_001] | Duplicate treasure chest file | Deleted duplicate file
+[2025-08-09] | [Batch_001] | Duplicate spell effect file | Deleted duplicate file
+
+# REMAKE REQUESTS - Assets needing regeneration
+[2025-08-09] | [Batch_001] | Legendary Weapon Collection | Needs individual weapon sprites | → Request new prompts
+[2025-08-09] | [Batch_001] | Mage Spellcasting Sprite | Needs proper sprite sizing | → Request new prompts  
+[2025-08-09] | [Batch_001] | Rogue Stealth Attack Sprite | Needs transparency cleanup | → Request new prompts
+[2025-08-09] | [Batch_001] | Spell Effect Animation | Needs individual animation frames | → Request new prompts
+[2025-08-09] | [Batch_001] | Status Effect Icons | Needs individual icon sprites | → Request new prompts

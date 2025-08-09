@@ -1,0 +1,6 @@
+FIRE_SWORD_WEAPON_SPRITE.png
+
+Create a high-quality SNES JRPG style fire sword sprite (32x32 pixels). 
+Design: Ornate medieval sword with flames dancing along the blade. Glowing orange-red gradient blade with flickering yellow flame effects around edges. Dark metal hilt with ruby gem in pommel. Transparent background.
+Style: 16-bit pixel art, vibrant colors, fantasy RPG weapon.
+Output: Single weapon sprite suitable for inventory display.

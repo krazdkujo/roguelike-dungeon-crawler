@@ -1,0 +1,10 @@
+TOWN BLACKSMITH NPC PORTRAIT
+
+Generate a 16-bit SNES pixel art style portrait of a friendly town blacksmith NPC. The character should be a burly, bearded smith wearing a leather apron, with soot-stained clothes and strong arms from years of forge work.
+
+Art Style: Classic SNES JRPG character portrait style
+Dimensions: 64x64 pixels for dialogue portraits
+Colors: Brown leather apron, white shirt with rolled sleeves, gray beard, ruddy complexion
+Expression: Warm, welcoming smile with professional confidence
+Background: Simple gradient or solid color backdrop
+Details: Thick muscular arms, hammer in hand or at belt, small burn scars on forearms, kind eyes, traditional smith's apron with tool loops, slight smile showing expertise and friendliness

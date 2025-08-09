@@ -1,0 +1,6 @@
+ICE_SHARD_SPELL_EFFECT_SPRITE.png
+
+Create a high-quality SNES JRPG style ice shard spell effect sprite (48x48 pixels).
+Design: Sharp crystalline ice projectile with frozen spikes. Pale blue color with white highlights. Frost particles trailing behind. Icicle formation with sharp points.
+Style: 16-bit pixel art, animated spell effect frame, cold ice colors.
+Output: Single spell effect sprite suitable for combat animations.

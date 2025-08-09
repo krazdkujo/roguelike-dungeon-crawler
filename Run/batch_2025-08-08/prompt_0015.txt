@@ -1,0 +1,10 @@
+BOSS CHAMBER ARENA BACKGROUND
+
+Generate a 16-bit SNES pixel art style background for an epic boss battle arena. The scene should be a grand circular chamber with ancient architecture, designed for climactic boss encounters.
+
+Art Style: Epic SNES JRPG boss arena with dramatic architectural elements
+Dimensions: 512x512 pixels for boss battle atmosphere
+Colors: Deep purples and blues, golden ancient metal, ominous red accents
+Environment: Circular arena with raised platforms and ancient columns
+Lighting: Dramatic lighting from magical sources and torches
+Details: Massive stone columns with ancient carvings, circular fighting pit with raised edges, ornate throne or altar at back, magical torches in sconces, intricate floor patterns with mystical symbols, floating platforms for dynamic combat, ominous statues of past warriors, cracked stone showing age, magical energy crackling between columns

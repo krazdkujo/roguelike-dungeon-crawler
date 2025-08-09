@@ -1,0 +1,10 @@
+TREASURE CHEST COLLECTION SPRITES
+
+Generate a 16-bit SNES pixel art style collection of treasure chest sprites in various states. Include closed wooden chest, closed ornate chest, open wooden chest with glow, and open ornate chest with magical aura.
+
+Art Style: Classic SNES JRPG treasure chest designs with quality variation
+Dimensions: 32x32 pixels each chest for dungeon placement
+Colors: Wooden chests (brown wood, iron bands), ornate chests (golden metal, gem inlays)
+Layout: Four chest variations showing different treasure tiers
+Background: Transparent for dungeon integration
+Details: Wooden chest with iron reinforcement bands, simple lock; Ornate chest with golden decorations, jeweled inlays; Open chests showing internal glow effects, treasure glimpses; closed chests with sturdy appearance; magical particle effects around opened ornate chest, professional game asset quality

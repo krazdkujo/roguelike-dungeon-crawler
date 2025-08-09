@@ -1,0 +1,10 @@
+LAVA FORGE DUNGEON BACKGROUND
+
+Generate a 16-bit SNES pixel art style background for a volcanic forge dungeon level. The scene should depict an ancient dwarven forge built into a volcanic cavern with flowing lava and industrial elements.
+
+Art Style: Dramatic SNES JRPG industrial/volcanic environment
+Dimensions: 512x512 pixels for full environmental immersion
+Colors: Bright oranges and reds from lava, dark iron grays, golden forge glow
+Environment: Multi-level forge complex built into volcanic cave
+Lighting: Intense glow from lava flows and forge fires
+Details: Massive stone anvils and forges, flowing lava channels, ancient bellows systems, iron walkways and platforms, molten metal flows, steam vents, hanging chains and pulleys, carved dwarven runes in stone, cooling pools, scattered forge tools, dramatic shadows from intense heat sources

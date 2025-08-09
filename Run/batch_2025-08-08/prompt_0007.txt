@@ -1,0 +1,10 @@
+DUNGEON SKELETON ARCHER SPRITE
+
+Generate a 16-bit SNES pixel art style undead skeleton archer enemy sprite. The skeleton should be drawing a bow with glowing arrows, wearing tattered remains of ancient armor.
+
+Art Style: Detailed SNES-era pixel art with supernatural elements
+Dimensions: 32x32 pixels, combat-ready sprite
+Colors: Bone white skeleton, dark gray/black armor remnants, eerie blue glowing arrows
+Pose: Mid-draw of bow, aiming stance
+Background: Transparent
+Details: Hollow eye sockets with faint glow, jaw slightly agape, ancient leather quiver, partially shredded cloak, cracked bones with realistic weathering, mystical blue energy emanating from arrow tip, ribcage visible through armor gaps

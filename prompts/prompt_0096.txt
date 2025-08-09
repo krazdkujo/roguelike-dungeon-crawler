@@ -1,0 +1,11 @@
+WISE_SAGE_NPC_PORTRAIT.png
+
+Create a 16-bit SNES pixel art style character portrait for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Ancient wise sage with long beard, mystical robes, knowing eyes, and aura of deep knowledge
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with wisdom whites, sage greens, ancient browns, and mystic blue accents
+Background: Transparent for portrait display
+Details: Aged facial features, flowing beard, mystical garments, wise expression, scholarly accessories, ancient wisdom
+Format: PNG with crisp pixel-perfect edges

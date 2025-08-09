@@ -1,0 +1,11 @@
+CRYSTAL_GOLEM_BOSS_SPRITE.png
+
+Create a 16-bit SNES pixel art style boss enemy for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Massive crystal golem with glowing magical core, composed of translucent blue and purple crystals
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with crystal blues, purples, whites, and bright magical glows
+Background: Transparent for sprite layering
+Details: Imposing size, crystalline formation limbs, glowing eyes and core, rocky base structure
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,10 @@
+LEGENDARY WEAPON COLLECTION SPRITES
+
+Generate a 16-bit SNES pixel art style collection of legendary weapon item sprites. Include a flaming sword, ice staff, and lightning bow, each with distinctive magical properties visible in the sprite.
+
+Art Style: Detailed SNES JRPG legendary item sprites with magical effects
+Dimensions: 32x32 pixels each weapon for inventory display
+Colors: Flaming sword (orange/red flames), ice staff (blue/white crystals), lightning bow (yellow/purple energy)
+Layout: Three separate weapon sprites with magical auras
+Background: Transparent for UI integration
+Details: Flaming sword with fire wreathed blade, ornate golden hilt; Ice staff with crystalline head, frost effects; Lightning bow with energy string, crackling electricity; each weapon showing premium craftsmanship, magical particle effects around each item, distinctive legendary quality appearance

@@ -1,0 +1,11 @@
+CURSED_STATUS_ICON.png
+
+Create a 16-bit SNES pixel art style status effect icon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Dark curse symbol with malevolent aura, twisted runes, and ominous energy radiating evil magic
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels
+Colors: Limited 16-bit palette with malevolent purples, cursed blacks, sickly greens, and warning reds
+Background: Transparent for UI overlay
+Details: Evil symbolism, twisted magical runes, dark emanation, clear curse indication, threatening appearance
+Format: PNG with crisp pixel-perfect edges

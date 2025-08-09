@@ -1,0 +1,11 @@
+skeleton-mage-enemy-32-1x.png
+
+Create a 16-bit SNES pixel art style enemy for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Undead skeleton mage with mystical staff, tattered robes, and magical aura
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (enemy sprite)
+Colors: Limited 16-bit palette with bone white, dark robes, and magical energy
+Background: Transparent for battle and exploration systems
+Details: Glowing eye sockets, ornate staff, flowing robes, necromantic energy
+Format: PNG with crisp pixel-perfect edges

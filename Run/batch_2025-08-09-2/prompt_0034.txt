@@ -1,0 +1,6 @@
+SLEEPING_STATUS_ICON.png
+
+Create a high-quality SNES JRPG style sleeping status effect icon (16x16 pixels).
+Design: Crescent moon with floating 'Z' sleep symbols. Soft blue and white dreamy colors. Peaceful slumber indication. Gentle sleep motif.
+Style: 16-bit pixel art, status effect icon, sleepy colors.
+Output: Single status icon sprite for game UI.

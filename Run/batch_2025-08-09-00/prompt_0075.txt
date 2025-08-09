@@ -1,0 +1,11 @@
+MIMIC_CHEST_ENEMY_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Deceptive treasure chest that reveals sharp fangs, glowing red eyes, and twisted metal limbs when awakened
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with rich browns, metallic golds, sinister reds, and dark shadow accents
+Background: Transparent for sprite layering
+Details: False chest appearance, menacing teeth, clawed appendages, predatory stance, deceptive treasure allure
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,6 @@
+LICH_SORCERER_ENEMY_BOSS_SPRITE.png
+
+Create a high-quality SNES JRPG style lich sorcerer enemy sprite (64x64 pixels).
+Design: Skeletal undead wizard in tattered black robes. Glowing purple eye sockets. Ornate staff topped with skull. Floating pose with dark magic aura. Bone hands with long finger bones visible.
+Style: 16-bit pixel art, detailed enemy sprite, undead boss appearance.
+Output: Single enemy sprite suitable for boss encounters.

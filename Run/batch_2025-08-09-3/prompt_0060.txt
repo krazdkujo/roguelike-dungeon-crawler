@@ -1,0 +1,11 @@
+mountain-peak-background-512-1x.png
+
+Create a 16-bit SNES pixel art style background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: High mountain peak vista with rocky cliffs and cloudy sky
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels (background scene)
+Colors: Limited 16-bit palette with stone grays, sky blues, and cloud whites
+Background: Solid environmental background for high-altitude areas
+Details: Jagged cliff faces, swirling clouds, distant peaks, dramatic elevation view
+Format: PNG with crisp pixel-perfect edges

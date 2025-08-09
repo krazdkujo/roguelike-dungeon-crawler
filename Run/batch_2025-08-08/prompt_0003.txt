@@ -1,0 +1,10 @@
+ROGUE CLASS - STEALTH ATTACK SPRITE
+
+Generate a 16-bit SNES pixel art style rogue character sprite in stealth attack position. The rogue should be crouched low with dual daggers, wearing dark leather armor with forest green and black color scheme.
+
+Art Style: Detailed SNES-era pixel art with smooth animations
+Dimensions: 32x32 pixels, game-ready sprite format
+Colors: Dark green leather armor, black cloak, silver daggers, muted earth tones
+Animation Frame: Crouched stealth position ready to strike
+Background: Transparent
+Details: Hood partially covering face, twin curved daggers drawn, agile build, utility belt with pouches, soft leather boots, predatory stance with one leg forward

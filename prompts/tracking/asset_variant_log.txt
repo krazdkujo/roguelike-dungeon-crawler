@@ -1,0 +1,17 @@
+# ASSET VARIANT TRACKING LOG
+# Track assets that need multiple versions/variants
+# Format: [Asset Type] | [Base Name] | [Variants Needed] | [Status]
+# ================================================================
+
+BACKGROUNDS | dungeon-corridor | cave, crystal, lava | cave(✅), crystal(✅), lava(✅)
+WEAPONS | sword | iron, steel, fire, ice | iron(✅), steel(✅), fire(✅), ice(pending)
+CHARACTERS | warrior | idle, attack, cast | idle(✅), attack(✅), cast(pending)
+ENEMIES | goblin | warrior, archer, shaman | warrior(✅), archer(pending), shaman(pending)
+ITEMS | potion | healing, mana, poison | healing(✅), mana(pending), poison(pending)
+STATUS_EFFECTS | basic | poison, blessed, sleep, paralyzed | poison(pending), blessed(pending), sleep(pending), paralyzed(pending)
+
+# Next Priority Assets for Variants:
+# - Ice weapons (staff, dagger)
+# - Character casting animations
+# - Enemy archer variants
+# - Potion variations

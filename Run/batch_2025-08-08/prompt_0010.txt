@@ -1,0 +1,10 @@
+SHADOW WRAITH ENEMY SPRITE
+
+Generate a 16-bit SNES pixel art style shadow wraith enemy sprite. The wraith should be a ghostly, ethereal creature with flowing dark robes and partially translucent appearance.
+
+Art Style: SNES JRPG supernatural enemy with translucency effects
+Dimensions: 32x32 pixels for regular enemy encounters
+Colors: Deep purples and blacks for robes, pale blue ghostly highlights, dark void for face
+Pose: Floating with arms extended, robes billowing supernaturally
+Background: Transparent
+Details: No visible face except glowing eyes, tattered flowing robes that fade at edges, wispy smoke-like effects at base instead of legs, long skeletal hands emerging from sleeves, ethereal glow around entire figure, semi-transparent appearance with darker core

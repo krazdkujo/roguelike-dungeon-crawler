@@ -1,0 +1,11 @@
+MYSTICAL_RUNE_ITEM_SPRITES.png
+
+Create a 16-bit SNES pixel art style item collection for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Set of magical runestones with different elemental properties (fire, ice, lightning, earth, shadow)
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels each (5 runes in collection)
+Colors: Limited 16-bit palette with distinct elemental colors - reds, blues, yellows, browns, purples
+Background: Transparent for sprite layering
+Details: Ancient carved symbols, magical glows, stone texture, mystical particle effects around each rune
+Format: PNG with crisp pixel-perfect edges

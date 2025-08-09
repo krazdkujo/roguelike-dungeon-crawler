@@ -1,0 +1,10 @@
+CAVE TROLL MINI-BOSS SPRITE
+
+Generate a 16-bit SNES pixel art style cave troll mini-boss enemy sprite. The troll should be large and brutish, wielding a massive stone club and wearing primitive fur garments.
+
+Art Style: Detailed SNES JRPG mini-boss sprite with imposing presence
+Dimensions: 48x48 pixels for mid-tier boss encounters  
+Colors: Gray-green mottled skin, brown fur clothing, gray stone club, yellow tusks
+Pose: Intimidating stance with club resting on shoulder
+Background: Transparent
+Details: Muscular build with prominent belly, large protruding tusks, wild unkempt hair, crude fur loincloth and shoulder wrap, massive stone club with primitive bindings, small beady eyes, battle scars across torso, hunched but powerful posture

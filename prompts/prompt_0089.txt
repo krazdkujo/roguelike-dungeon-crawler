@@ -1,0 +1,11 @@
+GIANT_SPIDER_BOSS_SPRITE.png
+
+Create a 16-bit SNES pixel art style boss enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Massive arachnid boss with multiple eyes, venomous fangs, hairy legs, and intimidating presence
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with dark browns, venomous greens, menacing reds, and shadow blacks
+Background: Transparent for sprite layering
+Details: Multiple spider eyes, threatening fangs, detailed leg structure, boss-tier size, arachnid menace
+Format: PNG with crisp pixel-perfect edges

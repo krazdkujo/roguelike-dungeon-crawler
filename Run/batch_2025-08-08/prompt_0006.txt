@@ -1,0 +1,10 @@
+GOBLIN WARRIOR ENEMY SPRITE
+
+Generate a 16-bit SNES pixel art style goblin warrior enemy sprite. The goblin should be small but menacing, wielding a crude spear and wearing patchwork armor made from scavenged materials.
+
+Art Style: Classic SNES JRPG monster sprite with detailed pixel work
+Dimensions: 32x32 pixels for combat encounters
+Colors: Sickly green skin, brown leather scraps, rusted metal pieces, yellow eyes
+Pose: Aggressive combat stance with spear raised
+Background: Transparent
+Details: Pointed ears, sharp teeth visible in snarl, mismatched armor pieces, crude wooden spear with metal tip, hunched posture, tribal war paint markings, small but fierce expression, tattered cloth around waist

@@ -1,0 +1,11 @@
+poison-bottle-item-16-1x.png
+
+Create a 16-bit SNES pixel art style item for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Poison bottle with toxic green liquid and skull-marked cork
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels (item icon)
+Colors: Limited 16-bit palette with toxic greens, dark glass, and warning symbols
+Background: Transparent for inventory and loot systems
+Details: Bubbling poison, skull label, dangerous aura, corroded bottle edges
+Format: PNG with crisp pixel-perfect edges

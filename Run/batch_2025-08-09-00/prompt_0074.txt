@@ -1,0 +1,11 @@
+TELEPORTATION_SPELL_EFFECT.png
+
+Create a 16-bit SNES pixel art style spell effect animation for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Swirling magical portal with dimensional rifts, sparkles, and reality-warping visual distortions
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with mystical purples, dimensional blues, reality whites, and sparkling effects
+Background: Transparent for sprite layering
+Details: Spiraling energy vortex, particle effects, magical runes, space-time distortion, ethereal wisps
+Format: PNG with crisp pixel-perfect edges

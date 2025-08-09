@@ -1,0 +1,10 @@
+ANCIENT LIBRARY DUNGEON BACKGROUND
+
+Generate a 16-bit SNES pixel art style background for an ancient magical library dungeon level. The scene should show towering bookshelves filled with ancient tomes, with magical lighting and mystical elements.
+
+Art Style: Rich SNES JRPG interior background with fine detail work
+Dimensions: 512x512 pixels for immersive game background
+Colors: Warm browns of aged wood, golden magical light, deep reds and purples of old books
+Environment: Multi-story library with floating platforms and magical elements
+Lighting: Soft magical illumination from floating orbs and enchanted books
+Details: Tall wooden bookshelves reaching toward vaulted ceiling, ornate ladder system, floating books with magical auras, ancient reading desks, magical floating candles, mystical symbols carved in stone pillars, scattered scrolls and tomes, magical energy wisps, aged stone architecture

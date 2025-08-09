@@ -1,0 +1,11 @@
+WIZARD_TOWER_INTERIOR_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style dungeon background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Ancient wizard's tower interior with floating spell books, magical apparatus, glowing crystals, and arcane symbols
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with deep purples, mystical blues, golden glows, and ethereal whites
+Background: Solid background suitable for gameplay overlay
+Details: Spiral staircase, enchanted cauldrons, levitating objects, magical particle effects, ancient tomes on shelves
+Format: PNG with crisp pixel-perfect edges

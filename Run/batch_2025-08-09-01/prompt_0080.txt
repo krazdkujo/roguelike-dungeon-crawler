@@ -1,0 +1,11 @@
+STONE_GARGOYLE_GUARDIAN_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Ancient stone gargoyle awakening from centuries of slumber, with cracked stone skin and glowing carved eyes
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with weathered stone grays, moss greens, glowing amber eyes, and ancient dust effects
+Background: Transparent for sprite layering
+Details: Weathered stone texture, architectural features, protective stance, ancient magical awakening, guardian presence
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,10 @@
+MAGICAL POTION COLLECTION SPRITES
+
+Generate a 16-bit SNES pixel art style collection of magical potion item sprites. Include health potion (red), mana potion (blue), and strength potion (green), each with distinctive bottle shapes and magical effects.
+
+Art Style: Classic SNES JRPG consumable item sprites with enchanting details
+Dimensions: 32x32 pixels each potion for inventory system
+Colors: Health potion (ruby red liquid), mana potion (sapphire blue), strength potion (emerald green)
+Layout: Three distinct potion bottles with unique characteristics
+Background: Transparent for game UI
+Details: Health potion in round flask with cork stopper, bubbling red liquid; Mana potion in tall narrow bottle, swirling blue energy; Strength potion in wide bottle, thick green liquid with sparkles; each bottle with magical glow effects, subtle label details, professional alchemical appearance

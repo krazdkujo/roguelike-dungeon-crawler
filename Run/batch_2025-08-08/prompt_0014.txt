@@ -1,0 +1,10 @@
+ENCHANTED FOREST TOWN BACKGROUND
+
+Generate a 16-bit SNES pixel art style background for an enchanted forest town area. The scene should show a magical village built among enormous trees with treehouses and natural architecture.
+
+Art Style: Whimsical SNES JRPG town environment with fantasy elements
+Dimensions: 512x512 pixels for town exploration background
+Colors: Rich forest greens, warm earth tones, magical blue and purple accents
+Environment: Multi-level tree-based village with natural integration
+Lighting: Dappled sunlight through canopy with magical glimmers
+Details: Houses built into and around massive tree trunks, rope bridges connecting platforms, spiral staircases around trees, hanging lanterns with magical light, flower gardens with glowing blooms, mushroom houses for smaller buildings, natural stone pathways, friendly forest creatures visible, magical sparkles in air, wooden signs with elvish script

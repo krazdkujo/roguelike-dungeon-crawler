@@ -1,0 +1,11 @@
+goblin-archer-enemy-32-1x.png
+
+Create a 16-bit SNES pixel art style enemy for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Goblin archer with crude bow, quiver of arrows, and menacing stance
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (enemy sprite)
+Colors: Limited 16-bit palette with green skin, brown leather, and wooden bow
+Background: Transparent for battle and exploration systems
+Details: Sharp teeth, pointed ears, drawn bowstring, ragged clothing, aggressive posture
+Format: PNG with crisp pixel-perfect edges

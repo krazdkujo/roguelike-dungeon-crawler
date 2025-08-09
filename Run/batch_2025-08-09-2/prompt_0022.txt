@@ -1,0 +1,6 @@
+ICE_STAFF_WEAPON_SPRITE.png
+
+Create a high-quality SNES JRPG style ice staff sprite (32x32 pixels).
+Design: Elegant wizard staff with crystalline ice shard at the top. Frozen blue crystal with sparkling white highlights. Dark wooden shaft with silver binding rings. Frost particles around crystal.
+Style: 16-bit pixel art, cool color palette, fantasy magic weapon.
+Output: Single weapon sprite suitable for inventory display.

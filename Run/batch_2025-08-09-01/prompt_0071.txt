@@ -1,0 +1,11 @@
+ACID_SLIME_ENEMY_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Corrosive green slime creature with bubbling acidic surface and glowing toxic core
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with toxic greens, sickly yellows, corrosive bubbling effects, and poisonous glows
+Background: Transparent for sprite layering
+Details: Gelatinous texture, acid droplets, menacing pseudopods, glowing interior, caustic vapor effects
+Format: PNG with crisp pixel-perfect edges

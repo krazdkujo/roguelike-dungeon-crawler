@@ -1,0 +1,11 @@
+CRYSTAL_SWORD_WEAPON_SPRITE.png
+
+Create a 16-bit SNES pixel art style weapon sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Magnificent crystal sword with translucent blade, magical energy core, and ethereal weapon design
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with crystal whites, magical blues, silver hilts, and prismatic energy gleams
+Background: Transparent for sprite layering
+Details: Crystalline blade structure, magical energy infusion, elegant hilt design, legendary weapon appearance, mystical craftsmanship
+Format: PNG with crisp pixel-perfect edges

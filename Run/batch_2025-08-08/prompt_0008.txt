@@ -1,0 +1,10 @@
+FIRE ELEMENTAL BOSS SPRITE
+
+Generate a 16-bit SNES pixel art style fire elemental boss enemy sprite. The creature should be a large, imposing humanoid figure made entirely of flames and molten rock, with intense heat distortion effects.
+
+Art Style: Epic SNES JRPG boss sprite with advanced pixel techniques
+Dimensions: 64x64 pixels for boss encounter scale
+Colors: Bright oranges, deep reds, yellow flames, black core with molten highlights
+Pose: Menacing stance with arms raised, flames dancing around body
+Background: Transparent
+Details: Core body of molten rock with flame exterior, flame hair/crown effect, glowing eyes of pure fire, flame tendrils extending from arms, heat wave distortion pixels around edges, imposing height, cracks showing inner lava glow

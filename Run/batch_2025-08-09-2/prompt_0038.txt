@@ -1,0 +1,6 @@
+DRAGON_ENEMY_BOSS_SPRITE.png
+
+Create a high-quality SNES JRPG style dragon enemy sprite (64x64 pixels).
+Design: Majestic red dragon in aggressive stance. Large wings spread wide. Fierce head with glowing yellow eyes. Sharp claws and teeth visible. Scales detailed with shading. Fire breathing pose.
+Style: 16-bit pixel art, detailed enemy sprite, dragon boss appearance.
+Output: Single enemy sprite suitable for boss encounters.

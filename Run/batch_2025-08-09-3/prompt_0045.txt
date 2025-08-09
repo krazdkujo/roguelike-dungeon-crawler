@@ -1,0 +1,11 @@
+warrior-casting-animation-32-1x.png
+
+Create a 16-bit SNES pixel art style character animation for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Warrior character performing special attack casting pose with raised weapon
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (character sprite)
+Colors: Limited 16-bit palette with armor grays, weapon steel, and magical aura
+Background: Transparent for battle and exploration systems
+Details: Dynamic pose, glowing weapon, energy effects, muscular stance
+Format: PNG with crisp pixel-perfect edges

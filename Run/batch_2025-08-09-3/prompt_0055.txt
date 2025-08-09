@@ -1,0 +1,11 @@
+sleep-status-icon-16-1x.png
+
+Create a 16-bit SNES pixel art style status effect icon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Sleep status effect icon with ZZZ symbols and dreamy cloud effects
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels (status icon)
+Colors: Limited 16-bit palette with soft blues, white clouds, and peaceful pastels
+Background: Transparent for UI overlay systems
+Details: Floating ZZZ text, soft cloud border, dreamy atmosphere, peaceful design
+Format: PNG with crisp pixel-perfect edges

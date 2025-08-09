@@ -1,0 +1,11 @@
+VAMPIRE_BAT_SWARM_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Menacing swarm of vampire bats with glowing red eyes and shadowy wings, creating a unified threat
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with midnight blacks, blood reds, shadow grays, and eerie glowing accents
+Background: Transparent for sprite layering
+Details: Multiple overlapping bats, sinister red eyes, flapping wing animation suggestion, nocturnal predator essence
+Format: PNG with crisp pixel-perfect edges

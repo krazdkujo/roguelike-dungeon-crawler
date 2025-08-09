@@ -1,0 +1,10 @@
+WARRIOR CLASS - COMBAT ATTACK SPRITE
+
+Generate a 16-bit SNES pixel art style character sprite of a warrior in mid-attack pose. The warrior should be wearing medieval plate armor with a blue and silver color scheme. Character should be wielding a large two-handed sword raised overhead in an attacking motion. 
+
+Art Style: Classic SNES JRPG pixel art with crisp, clean lines
+Dimensions: 32x32 pixels, suitable for game sprites
+Colors: Limited 16-bit palette - steel blue armor, silver accents, brown leather details
+Animation Frame: Single frame showing peak of sword swing motion
+Background: Transparent
+Details: Muscular build, determined facial expression visible through helmet visor, dynamic action pose with cape flowing behind

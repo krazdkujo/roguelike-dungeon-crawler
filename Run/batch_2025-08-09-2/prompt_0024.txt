@@ -1,0 +1,6 @@
+EARTH_HAMMER_WEAPON_SPRITE.png
+
+Create a high-quality SNES JRPG style earth hammer sprite (32x32 pixels).
+Design: Massive war hammer with stone head embedded with gems. Brown-grey granite head with green emerald inlays. Thick wooden handle with metal bands. Rock fragments around base.
+Style: 16-bit pixel art, earthy tones, fantasy warrior weapon.
+Output: Single weapon sprite suitable for inventory display.

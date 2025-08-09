@@ -1,0 +1,6 @@
+FLOATING_ISLAND_DUNGEON_BACKGROUND.png
+
+Create a high-quality SNES JRPG style floating island dungeon background (512x384 pixels).
+Design: Magical floating stone platform suspended in cloudy sky. Ancient ruins with crumbling pillars. Mystical runes glowing on stone surfaces. Waterfalls cascading off edges into void below. Wind-swept clouds surrounding platform.
+Style: 16-bit pixel art background, mystical sky dungeon environment.
+Output: Full background suitable for aerial dungeon exploration.

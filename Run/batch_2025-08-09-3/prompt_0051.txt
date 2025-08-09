@@ -1,0 +1,11 @@
+cave-spider-enemy-32-1x.png
+
+Create a 16-bit SNES pixel art style enemy for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Large cave spider with hairy legs, venomous fangs, and menacing posture
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (enemy sprite)
+Colors: Limited 16-bit palette with dark browns, black body, and red eyes
+Background: Transparent for battle and exploration systems
+Details: Eight detailed legs, segmented body, glowing red eyes, dripping venom
+Format: PNG with crisp pixel-perfect edges

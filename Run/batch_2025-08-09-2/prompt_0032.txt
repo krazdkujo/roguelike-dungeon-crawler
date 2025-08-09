@@ -1,0 +1,6 @@
+BLESSED_STATUS_ICON.png
+
+Create a high-quality SNES JRPG style blessed status effect icon (16x16 pixels).
+Design: Golden halo with white angel wings. Bright yellow-gold holy aura. Divine light rays emanating from center. Sacred blessing appearance.
+Style: 16-bit pixel art, status effect icon, holy colors.
+Output: Single status icon sprite for game UI.

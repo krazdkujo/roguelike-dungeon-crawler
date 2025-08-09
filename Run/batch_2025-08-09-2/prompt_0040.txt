@@ -1,0 +1,6 @@
+TOWN_TAVERN_INTERIOR_BACKGROUND.png
+
+Create a high-quality SNES JRPG style town tavern interior background (512x384 pixels).
+Design: Cozy medieval tavern with wooden tables and chairs. Stone fireplace with warm fire burning. Beer barrels stacked against walls. Hanging lanterns providing warm lighting. Bar counter with bottles displayed.
+Style: 16-bit pixel art background, welcoming town atmosphere.
+Output: Full background suitable for town interaction scenes.

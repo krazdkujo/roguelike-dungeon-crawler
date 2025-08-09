@@ -1,0 +1,11 @@
+WRAITH_LORD_BOSS_SPRITE.png
+
+Create a 16-bit SNES pixel art style boss enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Ethereal wraith lord with flowing ghostly robes, spectral crown, glowing soul energy, and undead majesty
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with spectral blues, ghostly whites, shadow blacks, and soul energy purples
+Background: Transparent for sprite layering
+Details: Translucent appearance, regal undead features, flowing ethereal garments, boss-tier presence, supernatural aura
+Format: PNG with crisp pixel-perfect edges

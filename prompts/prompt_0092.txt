@@ -1,0 +1,11 @@
+BANDIT_CAPTAIN_ENEMY_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Grizzled bandit leader with leather armor, curved scimitar, eyepatch, and commanding outlaw presence
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with leather browns, steel grays, bandit reds, and weathered flesh tones
+Background: Transparent for sprite layering
+Details: Leadership accessories, battle-worn armor, distinctive weapons, outlaw characteristics, threatening demeanor
+Format: PNG with crisp pixel-perfect edges

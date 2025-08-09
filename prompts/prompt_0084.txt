@@ -1,0 +1,11 @@
+ELEMENTAL_STORM_SPELL_EFFECT.png
+
+Create a 16-bit SNES pixel art style spell effect animation for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Swirling elemental storm with lightning, wind, fire, and ice effects converging in magical chaos
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with electric blues, flame oranges, frost whites, and wind-swept greens
+Background: Transparent for spell overlay effects
+Details: Multiple element fusion, energy spirals, magical convergence, powerful visual impact, dynamic motion
+Format: PNG with crisp pixel-perfect edges

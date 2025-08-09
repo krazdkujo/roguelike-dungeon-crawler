@@ -1,0 +1,11 @@
+NECROMANCER_ENEMY_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Dark necromancer in flowing hooded robes, holding a twisted bone staff with glowing skull ornament
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with dark purples, blacks, sickly greens, and eerie blue glows
+Background: Transparent for sprite layering
+Details: Shadowed face, tattered robes, skeletal hands, dark magical aura, menacing spellcasting pose
+Format: PNG with crisp pixel-perfect edges

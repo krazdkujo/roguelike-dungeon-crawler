@@ -1,0 +1,6 @@
+UNDERGROUND_MINE_DUNGEON_BACKGROUND.png
+
+Create a high-quality SNES JRPG style underground mine dungeon background (512x384 pixels).
+Design: Deep cave system with wooden support beams. Mining cart tracks on floor. Glowing crystals embedded in walls. Torch lighting creating shadows. Rocky stone walls and ceiling.
+Style: 16-bit pixel art background, atmospheric dungeon environment.
+Output: Full background suitable for dungeon exploration scenes.

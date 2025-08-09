@@ -1,0 +1,11 @@
+ARCANE_SCHOLAR_NPC_PORTRAIT.png
+
+Create a 16-bit SNES pixel art style NPC portrait for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Elderly arcane scholar with long white beard, round spectacles, and ornate robes covered in mystical symbols
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with deep blues, scholarly browns, silver hair, and golden magical accents
+Background: Transparent for sprite layering
+Details: Kind wise expression, ancient tome in hand, magical aura, intricate robe patterns, scholarly accessories
+Format: PNG with crisp pixel-perfect edges

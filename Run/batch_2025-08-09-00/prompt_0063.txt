@@ -1,0 +1,11 @@
+DARK_SWAMP_DUNGEON_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style dungeon background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Eerie swamp dungeon interior with murky water, twisted roots, hanging moss, and dim magical lighting
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with dark greens, browns, murky blues, and sickly yellow lighting
+Background: Solid background suitable for gameplay overlay
+Details: Atmospheric depth, wooden walkways, bubbling water, mystical fog effects, ancient stone ruins
+Format: PNG with crisp pixel-perfect edges

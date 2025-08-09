@@ -1,0 +1,6 @@
+LIGHTNING_DAGGER_WEAPON_SPRITE.png
+
+Create a high-quality SNES JRPG style lightning dagger sprite (32x32 pixels).
+Design: Sharp curved dagger crackling with electric energy. Silver-blue blade with yellow lightning bolts arcing around it. Black leather-wrapped handle. Sparking electrical effects.
+Style: 16-bit pixel art, electric color scheme, fantasy rogue weapon.
+Output: Single weapon sprite suitable for inventory display.

@@ -1,0 +1,11 @@
+ENCHANTED_AMULET_ITEM.png
+
+Create a 16-bit SNES pixel art style accessory item for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Mystical amulet with precious gemstone center, intricate metalwork, and protective magical aura
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels
+Colors: Limited 16-bit palette with precious gold, sapphire blues, protective silver, and magical white gleams
+Background: Transparent for sprite layering
+Details: Ornate jewelry design, central gem focus, protective enchantment glow, valuable appearance, mystic craftsmanship
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,11 @@
+ANCIENT_RUINS_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style dungeon background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Crumbling stone ruins with weathered pillars, overgrown vines, ancient statues, and mysterious glyphs
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with aged stone grays, verdant moss greens, faded bronze details, and atmospheric mist
+Background: Solid background suitable for gameplay overlay
+Details: Broken architecture, climbing vegetation, carved symbols, weathered surfaces, historical atmosphere
+Format: PNG with crisp pixel-perfect edges

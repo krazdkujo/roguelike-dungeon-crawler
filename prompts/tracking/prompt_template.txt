@@ -1,0 +1,23 @@
+# STANDARD PROMPT TEMPLATE
+# Use this consistent format for ALL prompts
+# ===============================================
+
+FILENAME.png
+
+Create a 16-bit SNES pixel art style [ASSET_TYPE] for a medieval fantasy roguelike dungeon crawler.
+
+Subject: [DETAILED_DESCRIPTION]
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: [SIZE] pixels ([16x16 for icons, 32x32 for sprites, 64x64 for bosses, 512x512 for backgrounds])
+Colors: Limited 16-bit palette with [SPECIFIC_COLORS]
+Background: [Transparent for sprites/items, solid for backgrounds]
+Details: [SPECIFIC_VISUAL_ELEMENTS]
+Format: PNG with crisp pixel-perfect edges
+
+# CONSISTENCY REQUIREMENTS:
+# - Always mention "16-bit SNES pixel art style"
+# - Always reference classic SNES JRPGs
+# - Always specify exact dimensions
+# - Always include color palette guidance
+# - Always specify background requirements
+# - Keep description concise but detailed

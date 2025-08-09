@@ -1,0 +1,11 @@
+orc-warrior-enemy-32-1x.png
+
+Create a 16-bit SNES pixel art style enemy for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Orc warrior with battle axe, heavy armor, and intimidating battle stance
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (enemy sprite)
+Colors: Limited 16-bit palette with dark green skin, iron armor, and weapon steel
+Background: Transparent for battle and exploration systems
+Details: Tusked jaw, scarred face, spiked armor, massive axe, muscular build
+Format: PNG with crisp pixel-perfect edges

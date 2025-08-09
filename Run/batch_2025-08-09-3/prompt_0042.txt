@@ -1,0 +1,11 @@
+water-sword-weapon-32-1x.png
+
+Create a 16-bit SNES pixel art style weapon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Enchanted water sword with flowing liquid blade and aquatic hilt
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (weapon sprite)
+Colors: Limited 16-bit palette with ocean blues, turquoise, and shimmering silver
+Background: Transparent for inventory and equipment systems
+Details: Fluid blade texture, water droplet effects, ornate aquatic guard design
+Format: PNG with crisp pixel-perfect edges

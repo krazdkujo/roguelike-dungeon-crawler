@@ -1,0 +1,11 @@
+PHOENIX_RESURRECTION_SPELL_EFFECT.png
+
+Create a 16-bit SNES pixel art style spell effect animation for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Magnificent phoenix rising with blazing wings, healing flames, resurrection energy, and rebirth magic
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with brilliant golds, sacred flames orange, healing whites, and divine reds
+Background: Transparent for spell overlay effects
+Details: Phoenix silhouette, wing flame effects, resurrection magic, divine radiance, life-giving energy
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,11 @@
+DESERT_OASIS_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style town background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Peaceful desert oasis with palm trees, clear water pool, sandy shores, and refreshing atmosphere
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with warm desert sands, tropical greens, crystal blue waters, and golden sunlight
+Background: Solid background suitable for gameplay overlay
+Details: Palm tree vegetation, pristine water source, sandy terrain, peaceful ambiance, natural beauty
+Format: PNG with crisp pixel-perfect edges

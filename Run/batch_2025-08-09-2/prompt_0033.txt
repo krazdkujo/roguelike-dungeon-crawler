@@ -1,0 +1,6 @@
+PARALYZED_STATUS_ICON.png
+
+Create a high-quality SNES JRPG style paralyzed status effect icon (16x16 pixels).
+Design: Lightning bolt striking through a barrier. Yellow electric bolts with blue static field. Electrical interference pattern. Shocking paralysis effect.
+Style: 16-bit pixel art, status effect icon, electric colors.
+Output: Single status icon sprite for game UI.

@@ -1,0 +1,11 @@
+ice-hammer-weapon-32-1x.png
+
+Create a 16-bit SNES pixel art style weapon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Massive ice war hammer with crystalline head and frozen grip
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (weapon sprite)
+Colors: Limited 16-bit palette with glacial blue, crystal white, and dark wood
+Background: Transparent for inventory and equipment systems
+Details: Spiked ice head, frost-wrapped handle, intimidating weight and size
+Format: PNG with crisp pixel-perfect edges

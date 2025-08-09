@@ -1,0 +1,11 @@
+ROYAL_KNIGHT_NPC_PORTRAIT.png
+
+Create a 16-bit SNES pixel art style character portrait for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Noble royal knight in shining armor with heraldic emblems, dignified expression, and commanding presence
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 64x64 pixels
+Colors: Limited 16-bit palette with polished silvers, royal blues, golden accents, and noble flesh tones
+Background: Transparent for portrait display
+Details: Ceremonial armor design, heraldic symbols, dignified facial features, leadership aura, knightly bearing
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,11 @@
+DRAGON_SCALE_ARMOR_ITEM.png
+
+Create a 16-bit SNES pixel art style armor item for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Legendary dragonscale mail crafted from crimson dragon hide with natural fire resistance properties
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with deep crimsons, scaled textures, metallic reinforcements, and fiery glints
+Background: Transparent for sprite layering
+Details: Overlapping scale pattern, draconic craftsmanship, magical fire resistance, legendary quality shimmer
+Format: PNG with crisp pixel-perfect edges

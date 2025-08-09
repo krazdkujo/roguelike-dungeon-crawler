@@ -1,0 +1,6 @@
+HEALING_SPARKLE_EFFECT_SPRITE.png
+
+Create a high-quality SNES JRPG style healing sparkle effect sprite (48x48 pixels).
+Design: Gentle golden sparkles with soft green healing aura. Twinkling star-like particles. Warm, soothing magical energy. Circular sparkle pattern.
+Style: 16-bit pixel art, animated spell effect frame, healing colors.
+Output: Single spell effect sprite suitable for healing animations.

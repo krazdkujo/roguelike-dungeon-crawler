@@ -1,0 +1,11 @@
+BLESSED_ELIXIR_ITEM.png
+
+Create a 16-bit SNES pixel art style consumable item for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Sacred blessed elixir in holy chalice with divine light, purifying energy, and celestial blessings
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels
+Colors: Limited 16-bit palette with divine golds, holy whites, blessed blues, and pure silver highlights
+Background: Transparent for sprite layering
+Details: Sacred vessel design, divine liquid glow, blessing emanation, premium holy item, celestial craftsmanship
+Format: PNG with crisp pixel-perfect edges

@@ -1,0 +1,10 @@
+TOWN SHOPKEEPER NPC PORTRAIT
+
+Generate a 16-bit SNES pixel art style portrait of an elderly female shopkeeper NPC. She should appear wise and trustworthy, wearing merchant clothes with warm, inviting colors that suggest reliability and fair dealing.
+
+Art Style: Detailed SNES JRPG character portrait with expressive features
+Dimensions: 64x64 pixels for in-game dialogue system
+Colors: Warm brown and cream merchant dress, silver-gray hair, wise amber eyes
+Expression: Kindly grandmother-like smile with slight merchant shrewdness
+Background: Neutral tone to complement UI
+Details: Hair pulled back in neat bun, small spectacles, weathered hands suggesting years of trade, simple jewelry indicating modest success, crow's feet showing kindness, traditional merchant apron with coin purse visible

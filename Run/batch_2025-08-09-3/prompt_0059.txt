@@ -1,0 +1,11 @@
+forest-grove-background-512-1x.png
+
+Create a 16-bit SNES pixel art style background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Mystical forest grove with ancient trees and dappled sunlight
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels (background scene)
+Colors: Limited 16-bit palette with forest greens, earth browns, and golden sunlight
+Background: Solid environmental background for exploration areas
+Details: Towering trees, moss-covered ground, filtered light beams, magical atmosphere
+Format: PNG with crisp pixel-perfect edges

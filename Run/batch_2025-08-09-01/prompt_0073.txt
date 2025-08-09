@@ -1,0 +1,11 @@
+VOLCANIC_CAVERN_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style dungeon background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Treacherous volcanic cavern with flowing lava streams, jagged obsidian formations, and intense heat effects
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with fiery reds, molten oranges, dark volcanic blacks, and bright lava glows
+Background: Solid background suitable for gameplay overlay
+Details: Bubbling lava pools, rocky platforms, steam vents, glowing magma flows, dangerous terrain features
+Format: PNG with crisp pixel-perfect edges

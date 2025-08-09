@@ -1,0 +1,11 @@
+mage-ultimate-animation-32-1x.png
+
+Create a 16-bit SNES pixel art style character animation for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Mage character performing ultimate spell casting with raised staff and magical aura
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (character sprite)
+Colors: Limited 16-bit palette with robed blues, magical purples, and glowing effects
+Background: Transparent for battle and exploration systems
+Details: Dramatic pose, swirling magical energy, elevated staff, intense concentration
+Format: PNG with crisp pixel-perfect edges

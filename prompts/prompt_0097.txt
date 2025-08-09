@@ -1,0 +1,11 @@
+VOLCANIC_CHAMBER_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style dungeon background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Intense volcanic chamber with lava streams, molten rock formations, fire geysers, and extreme heat atmosphere
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with molten reds, lava oranges, ash grays, and intense yellow heat glows
+Background: Solid background suitable for gameplay overlay
+Details: Lava flow effects, rocky formations, heat distortion, dangerous environment, volcanic activity
+Format: PNG with crisp pixel-perfect edges

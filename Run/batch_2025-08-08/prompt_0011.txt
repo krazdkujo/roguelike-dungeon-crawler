@@ -1,0 +1,10 @@
+CRYSTAL CAVERN DUNGEON BACKGROUND
+
+Generate a 16-bit SNES pixel art style background for a crystal cavern dungeon level. The scene should feature a mystical underground cave with large glowing crystals embedded in the walls and ceiling.
+
+Art Style: Detailed SNES JRPG environmental background with atmospheric depth
+Dimensions: 512x512 pixels for full-screen background
+Colors: Deep cave purples and blues, bright magical crystal colors (cyan, magenta, white), subtle ambient lighting
+Environment: Multi-layered cave system with crystal formations
+Lighting: Magical glow from crystals creating dramatic shadows
+Details: Large crystalline formations jutting from walls, smaller crystal clusters, stalactites and stalagmites, rocky cave floor with crystal shards, mysterious glowing pools reflecting crystal light, depth layers from foreground to background, ambient magical particle effects

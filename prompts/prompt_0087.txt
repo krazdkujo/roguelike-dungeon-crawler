@@ -1,0 +1,11 @@
+DEMONIC_CLAW_WEAPON_SPRITE.png
+
+Create a 16-bit SNES pixel art style weapon sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Terrifying demonic claw weapon with jagged talons, infernal designs, and unholy energy emanation
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with hellish reds, shadow blacks, bone whites, and demonic purple energy
+Background: Transparent for sprite layering
+Details: Razor-sharp talons, infernal engravings, evil aura, fearsome weapon design, supernatural craftsmanship
+Format: PNG with crisp pixel-perfect edges

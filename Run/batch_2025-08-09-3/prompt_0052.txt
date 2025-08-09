@@ -1,0 +1,11 @@
+mana-potion-item-16-1x.png
+
+Create a 16-bit SNES pixel art style item for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Mana potion bottle with glowing blue liquid and magical cork stopper
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 16x16 pixels (item icon)
+Colors: Limited 16-bit palette with magical blues, glass transparency, and cork brown
+Background: Transparent for inventory and loot systems
+Details: Swirling blue liquid, glass bottle shine, ornate label, magical shimmer
+Format: PNG with crisp pixel-perfect edges

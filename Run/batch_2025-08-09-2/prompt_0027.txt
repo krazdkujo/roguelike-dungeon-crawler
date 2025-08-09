@@ -1,0 +1,6 @@
+FIREBALL_SPELL_EFFECT_SPRITE.png
+
+Create a high-quality SNES JRPG style fireball spell effect sprite (48x48 pixels).
+Design: Bright orange-red fireball with yellow core. Flickering flames around edges. Trailing fire particles. Explosive magical energy appearance.
+Style: 16-bit pixel art, animated spell effect frame, vivid fire colors.
+Output: Single spell effect sprite suitable for combat animations.

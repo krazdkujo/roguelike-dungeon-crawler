@@ -1,0 +1,6 @@
+MAGE_CHARACTER_CASTING_SPRITE.png
+
+Create a high-quality SNES JRPG style mage character casting spell sprite (64x64 pixels).
+Design: Elderly wizard in purple robes with long grey beard. Pointed hat with star patterns. Staff raised overhead. Magical blue energy swirling around hands and staff tip. Dynamic casting pose.
+Style: 16-bit pixel art, detailed character sprite, mystical atmosphere.
+Output: Single character sprite with spell effects included.

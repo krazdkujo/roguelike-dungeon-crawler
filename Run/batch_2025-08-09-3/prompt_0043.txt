@@ -1,0 +1,11 @@
+frost-dagger-weapon-32-1x.png
+
+Create a 16-bit SNES pixel art style weapon for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Frost-enchanted dagger with icy blade and frozen crystal pommel
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels (weapon sprite)
+Colors: Limited 16-bit palette with frost white, ice blue, and silver steel
+Background: Transparent for inventory and equipment systems
+Details: Sharp crystalline edge, frost coating, ice crystal handle wrap
+Format: PNG with crisp pixel-perfect edges

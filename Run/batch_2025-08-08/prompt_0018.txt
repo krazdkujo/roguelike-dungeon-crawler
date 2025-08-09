@@ -1,0 +1,10 @@
+STATUS EFFECT ICON COLLECTION
+
+Generate a 16-bit SNES pixel art style collection of status effect icons for gameplay UI. Include poison, fire, ice, lightning, blessing, and curse effects, each clearly readable at small size.
+
+Art Style: Clean SNES JRPG status icon design with clear symbolism
+Dimensions: 16x16 pixels each icon for HUD integration  
+Colors: Poison (sickly green), fire (orange/red), ice (light blue/white), lightning (yellow), blessing (golden), curse (dark purple)
+Layout: Six distinct circular icons with symbolic representations
+Background: Dark border with transparent center for UI overlay
+Details: Poison (skull or droplet), fire (flame symbol), ice (snowflake), lightning (bolt), blessing (holy symbol/star), curse (dark aura/cracked symbol); each icon with subtle glow effect, professional game UI appearance, easily distinguishable at small scale

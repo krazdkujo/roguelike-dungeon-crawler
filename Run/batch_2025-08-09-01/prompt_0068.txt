@@ -1,0 +1,11 @@
+ANCIENT_TEMPLE_ALTAR_BACKGROUND.png
+
+Create a 16-bit SNES pixel art style dungeon background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Sacred temple chamber with ornate stone altar, divine light beams, religious murals, and holy artifacts
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels
+Colors: Limited 16-bit palette with warm golds, sacred whites, deep stone grays, and divine light effects
+Background: Solid background suitable for gameplay overlay
+Details: Marble columns, stained glass windows, burning incense braziers, celestial symbols, peaceful atmosphere
+Format: PNG with crisp pixel-perfect edges

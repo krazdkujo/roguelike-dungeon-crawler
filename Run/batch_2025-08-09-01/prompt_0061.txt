@@ -1,0 +1,11 @@
+ORC_BERSERKER_ENEMY_SPRITE.png
+
+Create a 16-bit SNES pixel art style enemy sprite for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Fierce orc berserker warrior wielding a massive two-handed axe, with intimidating battle scars and war paint
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 32x32 pixels
+Colors: Limited 16-bit palette with dark greens, browns, metallic grays, and red war paint accents
+Background: Transparent for sprite layering
+Details: Muscular build, tribal armor pieces, menacing facial expression, dynamic combat stance
+Format: PNG with crisp pixel-perfect edges

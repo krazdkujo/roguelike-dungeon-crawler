@@ -1,0 +1,11 @@
+ice-cave-background-512-1x.png
+
+Create a 16-bit SNES pixel art style background for a medieval fantasy roguelike dungeon crawler.
+
+Subject: Frozen ice cave interior with crystalline formations and icy stalactites
+Style: Authentic SNES JRPG aesthetic matching Secret of Mana, Final Fantasy VI, Chrono Trigger
+Dimensions: 512x512 pixels (background scene)
+Colors: Limited 16-bit palette with ice blues, crystal whites, and frozen shadows
+Background: Solid environmental background for dungeon exploration
+Details: Hanging icicles, frozen walls, crystal formations, cold atmosphere, depth layers
+Format: PNG with crisp pixel-perfect edges

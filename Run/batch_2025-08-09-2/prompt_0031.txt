@@ -1,0 +1,6 @@
+POISONED_STATUS_ICON.png
+
+Create a high-quality SNES JRPG style poisoned status effect icon (16x16 pixels).
+Design: Skull with green toxic vapor swirling around it. Dark green poison clouds. Sickly yellow-green color scheme. Clear icon suitable for UI display.
+Style: 16-bit pixel art, status effect icon, toxic colors.
+Output: Single status icon sprite for game UI.
